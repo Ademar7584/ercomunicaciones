@@ -1,0 +1,64 @@
+<?= $this->Html->css('view')?>
+<div class="container emp-profile">
+    <form method="post">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="profile-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog"
+                        alt="" />
+                    <div class="file btn btn-lg btn-primary">
+                        Change Photo
+                        <input type="file" name="file" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="profile-head">
+                    <h5>
+                        <?= h($user->names)?>
+                    </h5>
+                    <h6>
+                        <?= h($user->rol) ?>
+                    </h6>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <span class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                aria-controls="home" aria-selected="true">Datos del Usuario</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content profile-tab" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Nombres</label>
+                            </div>
+                            <div class="col-md-6">
+                                <p><?= h($user->names)?></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Correo Electronico</label>
+                            </div>
+                            <div class="col-md-6">
+                                <p><?= $user->email?></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Estado</label>
+                            </div>
+                            <div class="col-md-6">
+                                <p><?= $user->estado ?></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <?= $this->Html->link('Editar Perfil', ['action' => 'edit', $user->id], ['class' => 'profile-edit-btn']) ?>
+            </div>
+        </div>
+    </form>
+</div>
