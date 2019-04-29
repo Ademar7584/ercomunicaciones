@@ -35,14 +35,24 @@ class ProductosTable extends Table
         $this->hasMany('Ventasproducto', [
             'foreignKey' => 'producto_id'
         ]);
+
+        $this->addBehavior('Proffer.Proffer', [
+            'image' => [
+                'root' => WWW_ROOT . 'files',
+                'dir' => 'image_dir',
+                'thumbnailSizes' => [
+                    'square' => [
+                        'w' => 300,
+                        'h' => 300,
+                        'crop' => true,
+                        'jpeg_quality'	=> 100
+                    ]
+                ],
+                'thumbnailMethod' => 'gd'
+            ]
+        ]);
     }
 
-    /**
-     * Default validation rules.
-     *
-     * @param \Cake\Validation\Validator $validator Validator instance.
-     * @return \Cake\Validation\Validator
-     */
     public function validationDefault(Validator $validator)
     {
         $validator
@@ -71,17 +81,35 @@ class ProductosTable extends Table
             ->integer('estado')
             ->requirePresence('estado', 'create')
             ->notEmpty('estado');
+        
+            $validator
+            ->provider('proffer', 'Proffer\Model\Validation\ProfferRules')
+            ->add('image', 'proffer', [
+                'rule' => ['dimensions', [
+                    'min' => ['w' => 300, 'h' => 300],
+                    'max' => ['w' => 1500, 'h' => 1500]
+                ]],
+                'message' => 'La imagen no tiene correctas dimensiones.',
+                'provider' => 'proffer'
+            ])
+            ->add('image', 'extension', [
+                'rule' => ['extension', ['jpeg', 'png', 'jpg']],
+                'message' => 'La imagen no tiene una correcta extensión.',
+            ])
+            ->add('image', 'fileSize', [
+                'rule' => ['fileSize', '<=', '1MB'],
+                'message' => 'La imagen no debe exceder 1MB.',
+            ])
+            ->add('image', 'mimeType', [
+                'rule' => ['mimeType', ['image/jpeg', 'image/png']],
+                'message' => 'La imagen no tiene un correcto formato.',
+            ])
+            ->requirePresence('image', 'create')
+            ->notEmpty('image', null, 'create');
 
         return $validator;
     }
 
-    /**
-     * Returns a rules checker object that will be used for validating
-     * application integrity.
-     *
-     * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
-     * @return \Cake\ORM\RulesChecker
-     */
     public function buildRules(RulesChecker $rules)
     {
         $rules->add($rules->existsIn(['categoria_id'], 'Categorias'));

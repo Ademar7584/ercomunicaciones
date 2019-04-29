@@ -10,12 +10,6 @@ use Cake\Validation\Validator;
 class UsersTable extends Table
 {
 
-    /**
-     * Initialize method
-     *
-     * @param array $config The configuration for the Table.
-     * @return void
-     */
     public function initialize(array $config)
     {
         parent::initialize($config);
@@ -29,6 +23,22 @@ class UsersTable extends Table
         $this->belongsTo('Personas', [
             'foreignKey' => 'persona_id',
             'joinType' => 'INNER'
+        ]);
+
+        $this->addBehavior('Proffer.Proffer', [
+            'image' => [
+                'root' => WWW_ROOT . 'files',
+                'dir' => 'image_dir',
+                'thumbnailSizes' => [
+                    'square' => [
+                        'w' => 300,
+                        'h' => 300,
+                        'crop' => true,
+                        'jpeg_quality'	=> 100
+                    ]
+                ],
+                'thumbnailMethod' => 'gd'
+            ]
         ]);
     }
 
@@ -50,6 +60,31 @@ class UsersTable extends Table
         $validator
             ->requirePresence('password', 'create')
             ->notEmpty('password', 'rellene este campo', 'create');
+
+        $validator
+            ->provider('proffer', 'Proffer\Model\Validation\ProfferRules')
+            ->add('image', 'proffer', [
+                'rule' => ['dimensions', [
+                    'min' => ['w' => 300, 'h' => 300],
+                    'max' => ['w' => 1500, 'h' => 1500]
+                ]],
+                'message' => 'La imagen no tiene correctas dimensiones.',
+                'provider' => 'proffer'
+            ])
+            ->add('image', 'extension', [
+                'rule' => ['extension', ['jpeg', 'png', 'jpg']],
+                'message' => 'La imagen no tiene una correcta extensión.',
+            ])
+            ->add('image', 'fileSize', [
+                'rule' => ['fileSize', '<=', '1MB'],
+                'message' => 'La imagen no debe exceder 1MB.',
+            ])
+            ->add('image', 'mimeType', [
+                'rule' => ['mimeType', ['image/jpeg', 'image/png']],
+                'message' => 'La imagen no tiene un correcto formato.',
+            ])
+            ->requirePresence('image', 'create')
+            ->notEmpty('image', null, 'create');
         
         return $validator;
     }

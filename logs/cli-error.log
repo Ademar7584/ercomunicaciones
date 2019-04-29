@@ -39,3 +39,24 @@ Stack Trace:
 #2 {main}
 
 
+2019-04-29 20:05:54 Error: [InvalidArgumentException] There was a problem connecting to the database: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+ in C:\xampp\htdocs\cakephp-3.4.10\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php on line 115
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp-3.4.10\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(238): Phinx\Db\Adapter\MysqlAdapter->connect()
+#1 C:\xampp\htdocs\cakephp-3.4.10\vendor\cakephp\migrations\src\CakeAdapter.php(57): Phinx\Db\Adapter\PdoAdapter->getConnection()
+#2 C:\xampp\htdocs\cakephp-3.4.10\vendor\cakephp\migrations\src\Command\CommandTrait.php(78): Migrations\CakeAdapter->__construct(Object(Phinx\Db\Adapter\MysqlAdapter), Object(Cake\Database\Connection))
+#3 C:\xampp\htdocs\cakephp-3.4.10\vendor\robmorgan\phinx\src\Phinx\Console\Command\Create.php(153): Migrations\Command\Create->bootstrap(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\xampp\htdocs\cakephp-3.4.10\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\Create->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\xampp\htdocs\cakephp-3.4.10\vendor\cakephp\migrations\src\Command\Create.php(72): Migrations\Command\Create->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\xampp\htdocs\cakephp-3.4.10\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Create->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\xampp\htdocs\cakephp-3.4.10\vendor\symfony\console\Application.php(874): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\cakephp-3.4.10\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Create), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\xampp\htdocs\cakephp-3.4.10\vendor\symfony\console\Application.php(130): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\xampp\htdocs\cakephp-3.4.10\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\cakephp-3.4.10\vendor\cakephp\cakephp\src\Console\Shell.php(506): Migrations\Shell\MigrationsShell->main('migrations', 'create', 'CreatePruebaTal...')
+#12 C:\xampp\htdocs\cakephp-3.4.10\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#13 C:\xampp\htdocs\cakephp-3.4.10\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#14 C:\xampp\htdocs\cakephp-3.4.10\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+

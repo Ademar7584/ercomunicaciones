@@ -5,21 +5,6 @@ use Cake\ORM\Entity;
 use Cake\Auth\DefaultPasswordHasher;
 use Cake\ORM\TableRegistry;
 
-/**
- * User Entity
- *
- * @property int $id
- * @property string $names
- * @property string $email
- * @property string $password
- * @property string $rol
- * @property bool $estado
- * @property int $persona_id
- * @property \Cake\I18n\FrozenTime $created
- * @property \Cake\I18n\FrozenTime $modified
- *
- * @property \App\Model\Entity\Persona $persona
- */
 class User extends Entity
 {
 

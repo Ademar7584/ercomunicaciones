@@ -13,6 +13,8 @@ class ComposerStaticInit88159db45cb155c100b0903620d804a1
         'ede59e3a405fb689cd1cebb7bb1db3fb' => __DIR__ . '/..' . '/cakephp/cakephp/src/Collection/functions.php',
         '90236b492da7ca2983a2ad6e33e4152e' => __DIR__ . '/..' . '/cakephp/cakephp/src/I18n/functions.php',
         'b1fc73705e1bec51cd2b20a32cf1c60a' => __DIR__ . '/..' . '/cakephp/cakephp/src/Utility/bootstrap.php',
+        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
+        'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         'e7223560d890eab89cda23685e711e2c' => __DIR__ . '/..' . '/psy/psysh/src/Psy/functions.php',
     );
@@ -46,6 +48,7 @@ class ComposerStaticInit88159db45cb155c100b0903620d804a1
             'Psy\\' => 4,
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
+            'Proffer\\' => 8,
             'PhpParser\\' => 10,
             'Phinx\\' => 6,
         ),
@@ -57,6 +60,14 @@ class ComposerStaticInit88159db45cb155c100b0903620d804a1
         'J' => 
         array (
             'JsonSchema\\' => 11,
+        ),
+        'I' => 
+        array (
+            'Intervention\\Image\\' => 19,
+        ),
+        'G' => 
+        array (
+            'GuzzleHttp\\Psr7\\' => 16,
         ),
         'D' => 
         array (
@@ -157,6 +168,10 @@ class ComposerStaticInit88159db45cb155c100b0903620d804a1
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
+        'Proffer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/davidyell/proffer/src',
+        ),
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
@@ -176,6 +191,14 @@ class ComposerStaticInit88159db45cb155c100b0903620d804a1
         'JsonSchema\\' => 
         array (
             0 => __DIR__ . '/..' . '/justinrainbow/json-schema/src/JsonSchema',
+        ),
+        'Intervention\\Image\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image',
+        ),
+        'GuzzleHttp\\Psr7\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
         ),
         'DebugKit\\Test\\Fixture\\' => 
         array (

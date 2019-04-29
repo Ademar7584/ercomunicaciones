@@ -6,7 +6,7 @@
                         <div class="card-title mb-4">
                             <div class="d-flex justify-content-start">
                                 <div class="image-container">
-                                    <img src="http://placehold.it/150x150" id="imgProfile" style="width: 150px; height: 150px" class="img-thumbnail" />
+                                    <?= $this->Html->image('../files/productos/image/' . $producto->image_dir . '/square_' . $producto->image, ['alt' => $producto->marca, 'class' => 'img-responsive img-thumbnail center-block']) ?>
                                 </div>
                                 <div class="userData ml-3">
                                     <h2 class="d-block" style="font-size: 1.5rem; font-weight: bold">Modelo : <?= h($producto->modelo) ?></h2>

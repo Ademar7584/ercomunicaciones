@@ -27,7 +27,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->Html->meta('icon') ?>
 
     <?= $this->Html->css('bootstrap.min') ?>
-    <?= $this->Html->script(['jquery-3.4.0.min', 'bootstrap.min']) ?>
+    <?= $this->Html->script(['jquery-3.4.0.min', 'bootstrap.min', 'bootstrap-filestyle.min']) ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
