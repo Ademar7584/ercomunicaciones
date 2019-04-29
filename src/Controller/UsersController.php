@@ -83,11 +83,24 @@ class UsersController extends AppController
             $user->role = 'user';
             $user->estado = 1;
             if ($this->Users->save($user)) {
-                $this->Flash->success(' El usuario ha sido guardado.');
+                $this->Flash->success('El usuario ha sido guardado.');
 
-                return $this->redirect(['controller' => 'Users', 'action' => 'index']);
+                return $this->redirect(['controller' => 'Users', 'action' => 'home']);
             }
             $this->Flash->error('El usuario no pudo ser guardado. trata de nuevo.');
+        }
+        $this->set(compact('user'));
+    }
+
+    public function new() {
+        $user = $this->Users->newEntity();
+        if($this->request->is('post')) {
+            $user = $this->Users->patchEntity($user, $this->request->data);
+            if($this->Users->save($user)) {
+                $this->Flash->success('El usuario ha sido guardado');
+                return $this->redirect(['controller' => 'Users', 'action' => 'index']);
+            }
+            $this->Flash->error('El usaurio no pudo ser guardado. trata de nuevo');
         }
         $this->set(compact('user'));
     }

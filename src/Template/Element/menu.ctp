@@ -15,8 +15,13 @@
           <?= $this->html->link('Crear Cliente', ['controller' => 'Clientes', 'action' => 'add'], ['class' => 'dropdown-item']) ?>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Actividades</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">Categorias</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown03">
+          <?= $this->html->link('Lista de Categorias', ['controller' => 'Categorias', 'action' => 'index'], ['class' => 'dropdown-item']) ?>
+          <?= $this->html->link('Crear Categoria', ['controller' => 'Categorias', 'action' => 'add'], ['class' => 'dropdown-item']) ?>
+        </div>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Proyectos</a>
@@ -48,7 +53,7 @@
           <?= $this->Html->link('Perfil', ['controller' => 'Users', 'action' => 'view', $current_user['id']], ['class' => 'dropdown-item']) ?>
           <?php if($current_user['rol'] == 'admin'): ?>
           <?= $this->Html->link('Listar usuarios', ['controller' => 'Users', 'action' => 'index'], ['class' => 'dropdown-item']) ?>
-          <?= $this->Html->link('Crear usuario', ['controller' => 'Users', 'action' => 'add'], ['class' => 'dropdown-item']) ?>
+          <?= $this->Html->link('Crear usuario', ['controller' => 'Users', 'action' => 'new'], ['class' => 'dropdown-item']) ?>
           <?php endif; ?>
           <?= $this->Html->link('salir', ['controller' => 'Users', 'action' => 'logout'], ['class' => 'dropdown-item'])?>
         </div>
