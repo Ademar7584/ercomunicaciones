@@ -69,6 +69,10 @@ class ComposerStaticInit88159db45cb155c100b0903620d804a1
         array (
             'GuzzleHttp\\Psr7\\' => 16,
         ),
+        'F' => 
+        array (
+            'Faker\\' => 6,
+        ),
         'D' => 
         array (
             'DebugKit\\Test\\Fixture\\' => 22,
@@ -199,6 +203,10 @@ class ComposerStaticInit88159db45cb155c100b0903620d804a1
         'GuzzleHttp\\Psr7\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
+        ),
+        'Faker\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker',
         ),
         'DebugKit\\Test\\Fixture\\' => 
         array (

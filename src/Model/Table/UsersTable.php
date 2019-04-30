@@ -20,11 +20,6 @@ class UsersTable extends Table
 
         $this->addBehavior('Timestamp');
 
-        $this->belongsTo('Personas', [
-            'foreignKey' => 'persona_id',
-            'joinType' => 'INNER'
-        ]);
-
         $this->addBehavior('Proffer.Proffer', [
             'image' => [
                 'root' => WWW_ROOT . 'files',
@@ -90,7 +85,6 @@ class UsersTable extends Table
     public function buildRules(RulesChecker $rules)
     {
         $rules->add($rules->isUnique(['email'], 'ya existe un usuario con este correo electronico'));
-        $rules->add($rules->existsIn(['persona_id'], 'Personas'));
 
         return $rules;
     }

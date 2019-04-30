@@ -12,7 +12,8 @@
         "cakephp/plugin-installer": "~1.0",
         "josegonzalez/dotenv": "2.*",
         "friendsofcake/bootstrap-ui": "^1.4",
-        "davidyell/proffer": "^0.8"
+        "davidyell/proffer": "^0.8",
+        "fzaninotto/faker": "^1.8"
     },
     "require-dev": {
         "psy/psysh": "@stable",
