@@ -12,7 +12,7 @@ class UsersController extends AppController
 
     public function isAuthorized($user) {
         if(isset($user['rol']) and $user['rol'] === 'user') {
-            if(in_array($this->request->action, ['home', 'logout'])) {
+            if(in_array($this->request->action, ['home', 'logout', 'view'])) {
                 return true;
             }
         }
@@ -62,7 +62,7 @@ class UsersController extends AppController
         $user = $this->Users->newEntity();
         if ($this->request->is('post')) {
             $user = $this->Users->patchEntity($user, $this->request->data);
-            $user->role = 'user';
+            $user->rol = 'user';
             $user->estado = 1;
             if ($this->Users->save($user)) {
                 $this->Flash->success('El usuario ha sido guardado.');

@@ -52,7 +52,7 @@
           <b class="caret"></b></a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown03">
           <?= $this->Html->link('Perfil', ['controller' => 'Users', 'action' => 'view', $current_user['id']], ['class' => 'dropdown-item']) ?>
-          <?php if($current_user['rol'] == 'admin'): ?>
+          <?php if($current_user['rol'] === 'admin'): ?>
           <?= $this->Html->link('Listar usuarios', ['controller' => 'Users', 'action' => 'index'], ['class' => 'dropdown-item']) ?>
           <?= $this->Html->link('Crear usuario', ['controller' => 'Users', 'action' => 'new'], ['class' => 'dropdown-item']) ?>
           <?php endif; ?>
