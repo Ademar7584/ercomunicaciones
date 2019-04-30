@@ -14,6 +14,7 @@
           </div>
         </div>
         <div class="mb-3">
+        <label for="lastName">Descripcion</label>
           <?php echo $this->Form->input('descripcion', ['placeholder' => 'Coloque la descripcion', 'label' => false, 'required']); ?>
         </div>
           <?= $this->Form->button(__('Crear'), ['class' => 'btn btn-primary']) ?>

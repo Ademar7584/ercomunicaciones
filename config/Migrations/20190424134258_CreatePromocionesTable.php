@@ -14,7 +14,7 @@ class CreatePromocionesTable extends AbstractMigration
     {
         $table = $this->table('promociones');
         $table->AddColumn('nombre', 'string', array('limit' => 100))
-            ->AddColumn('descripcion', 'string')
+            ->AddColumn('descripcion', 'text')
             ->AddColumn('tipo', 'string')
             ->AddColumn('estado', 'integer')
             ->AddColumn('created', 'datetime')

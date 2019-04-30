@@ -10,7 +10,7 @@
             <th><?= $this->Paginator->sort('Direccion') ?></th>
             <th><?= $this->Paginator->sort('Correo Electronico') ?></th>
             <th><?= $this->Paginator->sort('Tipo') ?></th>
-            <th scope="col" class="actions"><?= __('Actions') ?></th>
+            <th scope="col" class="actions"><?= __('Acciones') ?></th>
           </thead>
           <tbody>
           <?php foreach ($clientes as $cliente): ?>

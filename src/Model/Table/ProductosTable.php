@@ -9,12 +9,6 @@ use Cake\Validation\Validator;
 class ProductosTable extends Table
 {
 
-    /**
-     * Initialize method
-     *
-     * @param array $config The configuration for the Table.
-     * @return void
-     */
     public function initialize(array $config)
     {
         parent::initialize($config);
@@ -29,12 +23,6 @@ class ProductosTable extends Table
             'foreignKey' => 'categoria_id',
             'joinType' => 'INNER'
         ]);
-        $this->hasMany('Promocionesproducto', [
-            'foreignKey' => 'producto_id'
-        ]);
-        $this->hasMany('Ventasproducto', [
-            'foreignKey' => 'producto_id'
-        ]);
 
         $this->addBehavior('Proffer.Proffer', [
             'image' => [
@@ -42,8 +30,8 @@ class ProductosTable extends Table
                 'dir' => 'image_dir',
                 'thumbnailSizes' => [
                     'square' => [
-                        'w' => 300,
-                        'h' => 300,
+                        'w' => 700,
+                        'h' => 700,
                         'crop' => true,
                         'jpeg_quality'	=> 100
                     ]

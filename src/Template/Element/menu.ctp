@@ -23,11 +23,13 @@
           <?= $this->html->link('Crear Categoria', ['controller' => 'Categorias', 'action' => 'add'], ['class' => 'dropdown-item']) ?>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Proyectos</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Proveedores</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">Promociones</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown03">
+          <?= $this->html->link('Lista de Promociones', ['controller' => 'Promociones', 'action' => 'index'], ['class' => 'dropdown-item']) ?>
+          <?= $this->html->link('Crear Promocion', ['controller' => 'Promociones', 'action' => 'add'], ['class' => 'dropdown-item']) ?>
+        </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true"

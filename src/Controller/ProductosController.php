@@ -45,7 +45,8 @@ class ProductosController extends AppController
             }
             $this->Flash->error(__('El producto no pudo ser guardado, intente de nuevo.'));
         }
-        $this->set(compact('producto'));
+        $categorias = $this->Productos->Categorias->find('list');
+        $this->set(compact('producto', 'categorias'));
         $this->set('_serialize', ['producto']);
     }
 

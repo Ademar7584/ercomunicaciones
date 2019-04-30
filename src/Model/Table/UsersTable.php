@@ -31,8 +31,8 @@ class UsersTable extends Table
                 'dir' => 'image_dir',
                 'thumbnailSizes' => [
                     'square' => [
-                        'w' => 300,
-                        'h' => 300,
+                        'w' => 700,
+                        'h' => 700,
                         'crop' => true,
                         'jpeg_quality'	=> 100
                     ]
@@ -82,9 +82,7 @@ class UsersTable extends Table
             ->add('image', 'mimeType', [
                 'rule' => ['mimeType', ['image/jpeg', 'image/png']],
                 'message' => 'La imagen no tiene un correcto formato.',
-            ])
-            ->requirePresence('image', 'create')
-            ->notEmpty('image', null, 'create');
+            ]);
         
         return $validator;
     }

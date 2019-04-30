@@ -1,6 +1,7 @@
-<div class="container-fluid">
+<?= $this->Html->css('view')?>
+<div class="container-flud">
     <div class="row">
-        <div class="col-12">
+        <div class="col-10">
             <h3>Detalles de la Categoria</h3>
             <div class="tab-content ml-1" id="myTabContent">
                 <div class="tab-pane fade show active" id="basicInfo" role="tabpanel" aria-labelledby="basicInfo-tab">
@@ -32,6 +33,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="col-2">
+            <?= $this->Html->link('Editar Categoria', ['action' => 'edit', $categoria->id], ['class' => 'profile-edit-btn']) ?>
         </div>
     </div>
 </div>
