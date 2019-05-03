@@ -5,6 +5,7 @@
       <div class="table-responsive">
         <table id="mytable" class="table table-bordered table-striped">
           <thead>
+          <th><?= $this->Paginator->sort('Imagen')?></th>
             <th><?= $this->Paginator->sort('Modelo') ?></th>
             <th><?= $this->Paginator->sort('Categoria') ?></th>
             <th><?= $this->Paginator->sort('Stock') ?></th>
@@ -13,6 +14,9 @@
           <tbody>
           <?php foreach ($productos as $producto): ?>
             <tr>
+            <td>
+                 <?= $this->Html->image('../files/productos/image/' . $producto->image_dir . '/square_' . $producto->image, ['alt' => $producto->marca, 'class' => 'img-responsive', 'style' => 'width: 4rem;']) ?>
+                              </td>
               <td><?= h($producto->modelo) ?></td>
               <td><?= h($producto->categoria['nombre']) ?></td>
               <td><?= h($producto->stock) ?></td>
@@ -28,14 +32,10 @@
     </div>
   </div>
 </div>
-<nav aria-label="Page navigation">
-  <ul class="pagination justify-content-center">
-    <li class="page-item">
-      <?= $this->Paginator->prev(__('< Anterior')) ?>
-    </li>
-    <li class="page-item"><?= $this->Paginator->numbers() ?></li>
-    <li class="page-item">
-    <?= $this->Paginator->next(__('Siguiente >')) ?>
-    </li>
-  </ul>
-</nav>
+<div class="paginator">
+        <ul class="pagination">
+            <?= $this->Paginator->prev('< ' . __('Anterior')) ?>
+            <?= $this->Paginator->numbers() ?>
+            <?= $this->Paginator->next(__('Siguiente') . ' >') ?>
+        </ul>
+</div>

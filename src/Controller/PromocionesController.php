@@ -18,7 +18,7 @@ class PromocionesController extends AppController
 
     public function index()
     {
-        $promociones = $this->paginate($this->Promociones);
+        $promociones = $this->paginate($this->Promociones, array('limit' => 10));
 
         $this->set(compact('promociones'));
         $this->set('_serialize', ['promociones']);

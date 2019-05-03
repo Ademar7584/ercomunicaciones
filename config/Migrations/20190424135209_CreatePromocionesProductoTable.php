@@ -16,6 +16,8 @@ class CreatePromocionesProductoTable extends AbstractMigration
         $table->AddColumn('nombre', 'string', array('limit' => 100))
             ->AddColumn('producto_id', 'integer', array('limit' => 11))
             ->AddColumn('promocione_id', 'integer', array('limit' => 11))
+            ->AddColumn('created', 'datetime')
+            ->AddColumn('modified', 'datetime')
             ->create();
     }
 }

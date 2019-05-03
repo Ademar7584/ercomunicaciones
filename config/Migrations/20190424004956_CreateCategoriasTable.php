@@ -16,6 +16,8 @@ class CreateCategoriasTable extends AbstractMigration
         $table->AddColumn('nombre', 'string', array('limit' => 100))
             ->AddColumn('descripcion', 'text')
             ->AddColumn('tipo', 'string')
+            ->AddColumn('created', 'datetime')
+            ->AddColumn('modified', 'datetime')
             ->create();
     }
 }

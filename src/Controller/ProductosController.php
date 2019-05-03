@@ -20,7 +20,7 @@ class ProductosController extends AppController
         $this->paginate = [
             'contain' => ['Categorias']
         ];
-        $productos = $this->paginate($this->Productos);
+        $productos = $this->paginate($this->Productos, array('limit' => 10));
 
         $this->set(compact('productos'));
         $this->set('_serialize', ['productos']);

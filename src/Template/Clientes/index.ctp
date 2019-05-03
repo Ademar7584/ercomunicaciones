@@ -9,7 +9,6 @@
             <th><?= $this->Paginator->sort('Apellido') ?></th>
             <th><?= $this->Paginator->sort('Direccion') ?></th>
             <th><?= $this->Paginator->sort('Correo Electronico') ?></th>
-            <th><?= $this->Paginator->sort('Tipo') ?></th>
             <th scope="col" class="actions"><?= __('Acciones') ?></th>
           </thead>
           <tbody>
@@ -19,7 +18,6 @@
               <td><?= h($cliente->apellido) ?></td>
               <td><?= h($cliente->direccion) ?></td>
               <td><?= h($cliente->correo) ?></td>
-              <td><?= h($cliente->tipo) ?></td>
               <td class="actions">
                     <?= $this->Html->link(__('Ver'), ['action' => 'view', $cliente->id], ['class' => 'btn btn-primary btn-sm']) ?>
                     <?= $this->Form->postLink(__('Eliminar'), ['action' => 'delete', $cliente->id], ['confirm' => __('Estas seguro de eliminarlo'), 'class' => 'btn btn-danger btn-sm']) ?>
@@ -32,14 +30,10 @@
     </div>
   </div>
 </div>
-<nav aria-label="Page navigation">
-  <ul class="pagination justify-content-center">
-    <li class="page-item">
-      <?= $this->Paginator->prev(__('< Anterior')) ?>
-    </li>
-    <li class="page-item"><?= $this->Paginator->numbers() ?></li>
-    <li class="page-item">
-    <?= $this->Paginator->next(__('Siguiente >')) ?>
-    </li>
-  </ul>
-</nav>
+<div class="paginator">
+        <ul class="pagination">
+            <?= $this->Paginator->prev('< ' . __('Anterior')) ?>
+            <?= $this->Paginator->numbers() ?>
+            <?= $this->Paginator->next(__('Siguiente') . ' >') ?>
+        </ul>
+</div>

@@ -16,6 +16,8 @@ class CreateActividadesUsuarioTable extends AbstractMigration
         $table->AddColumn('nombre', 'string', array('limit' => 100))
             ->AddColumn('usuario_id', 'integer')
             ->AddColumn('actividad_id', 'integer')
+            ->AddColumn('created', 'datetime')
+            ->AddColumn('modified', 'datetime')
             ->create();
     }
 }

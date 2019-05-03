@@ -23,7 +23,7 @@ class CategoriasController extends AppController
 
     public function index()
     {
-        $categorias = $this->paginate($this->Categorias);
+        $categorias = $this->paginate($this->Categorias, array('limit' => 10));
 
         $this->set(compact('categorias'));
         $this->set('_serialize', ['categorias']);

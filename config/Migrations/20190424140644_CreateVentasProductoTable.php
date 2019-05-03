@@ -16,6 +16,8 @@ class CreateVentasProductoTable extends AbstractMigration
         $table->AddColumn('nombre', 'string', array('limit' => 100))
             ->AddColumn('cliente_id', 'integer', array('limit' => 11))
             ->AddColumn('producto_id', 'integer', array('limit' => 11))
+            ->AddColumn('created', 'datetime')
+            ->AddColumn('modified', 'datetime')
             ->create();
     }
 }

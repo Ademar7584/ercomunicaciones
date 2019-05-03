@@ -19,7 +19,7 @@ class ActividadesController extends AppController
      */
     public function index()
     {
-        $actividades = $this->paginate($this->Actividades);
+        $actividades = $this->paginate($this->Actividades, array('limit' => 10));
 
         $this->set(compact('actividades'));
         $this->set('_serialize', ['actividades']);

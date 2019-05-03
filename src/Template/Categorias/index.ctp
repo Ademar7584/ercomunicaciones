@@ -26,14 +26,10 @@
     </div>
   </div>
 </div>
-<nav aria-label="Page navigation">
-  <ul class="pagination justify-content-center">
-    <li class="page-item">
-      <?= $this->Paginator->prev(__('< Anterior')) ?>
-    </li>
-    <li class="page-item"><?= $this->Paginator->numbers() ?></li>
-    <li class="page-item">
-    <?= $this->Paginator->next(__('Siguiente >')) ?>
-    </li>
-  </ul>
-</nav>
+<div class="paginator">
+        <ul class="pagination">
+            <?= $this->Paginator->prev('< ' . __('Anterior')) ?>
+            <?= $this->Paginator->numbers() ?>
+            <?= $this->Paginator->next(__('Siguiente') . ' >') ?>
+        </ul>
+</div>

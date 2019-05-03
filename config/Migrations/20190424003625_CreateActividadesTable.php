@@ -17,6 +17,8 @@ class CreateActividadesTable extends AbstractMigration
             ->AddColumn('descripcion', 'string')
             ->AddColumn('tipo', 'string', array('limit' => 200))
             ->AddColumn('estado', 'boolean')
+            ->AddColumn('created', 'datetime')
+            ->AddColumn('modified', 'datetime')
             ->create();
     }
 }
