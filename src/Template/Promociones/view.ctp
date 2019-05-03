@@ -37,14 +37,14 @@
                             <label style="font-weight:bold;">Estado</label>
                         </div>
                         <div class="col-md-8 col-6">
-                            <?= h($promocione->estado) ?>
+                            <?php echo $status[$promocione->estado] ?>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-2">
-            <?= $this->Html->link('Editar Promocion', ['action' => 'edit', $promocione->id], ['class' => 'profile-edit-btn']) ?>
+            <?= $this->Html->link('Editar', ['action' => 'edit', $promocione->id], ['class' => 'btn btn-outline-success']) ?>
         </div>
     </div>
 </div>

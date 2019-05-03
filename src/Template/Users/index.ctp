@@ -9,7 +9,6 @@
             <th><?= $this->Paginator->sort('names') ?></th>
             <th><?= $this->Paginator->sort('email') ?></th>
             <th><?= $this->Paginator->sort('rol') ?></th>
-            <th><?= $this->Paginator->sort('estado') ?></th>
             <th scope="col" class="actions"><?= __('Acciones') ?></th>
           </thead>
           <tbody>
@@ -18,7 +17,6 @@
               <td><?= h($user->names) ?></td>
               <td><?= h($user->email) ?></td>
               <td><?= h($user->rol) ?></td>
-              <td><?= h($user->estado) ?></td>
               <td class="actions">
                     <?= $this->Html->link(__('Ver'), ['action' => 'view', $user->id], ['class' => 'btn btn-primary btn-sm']) ?>
                     <?= $this->Form->postLink(__('Eliminar'), ['action' => 'delete', $user->id], ['confirm' => __('Estas seguro de eliminarlo'), 'class' => 'btn btn-danger btn-sm']) ?>
@@ -34,11 +32,11 @@
 <nav aria-label="Page navigation">
   <ul class="pagination justify-content-center">
     <li class="page-item">
-      <?= $this->Paginator->prev(__('Anterior')) ?>
+      <?= $this->Paginator->prev(__('< Anterior')) ?>
     </li>
     <li class="page-item"><?= $this->Paginator->numbers() ?></li>
     <li class="page-item">
-    <?= $this->Paginator->next(__('Siguiente')) ?>
+    <?= $this->Paginator->next(__('Siguiente >')) ?>
     </li>
   </ul>
 </nav>

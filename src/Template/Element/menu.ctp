@@ -39,6 +39,14 @@
           <?= $this->html->link('Crear Productos', ['controller' => 'Productos', 'action' => 'add'], ['class' => 'dropdown-item']) ?>
         </div>
       </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">Actividades</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown03">
+          <?= $this->html->link('Lista de Actividades', ['controller' => 'Actividades', 'action' => 'index'], ['class' => 'dropdown-item']) ?>
+          <?= $this->html->link('Crear Actividad', ['controller' => 'Actividades', 'action' => 'add'], ['class' => 'dropdown-item']) ?>
+        </div>
+      </li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li class="nav-item dropdown">

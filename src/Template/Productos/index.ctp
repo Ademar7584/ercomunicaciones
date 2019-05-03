@@ -1,17 +1,41 @@
 <div class="container-fluid">
-    <h2>Lista de Productos</h2>
-    <div class="row">
-        <?php foreach ($productos as $producto): ?>
-        <div class="col-md-4">
-            <div class="card" style="width: 18rem; margin-bottom: 1.5rem;">
-                <?= $this->Html->image('../files/productos/image/' . $producto->image_dir . '/square_' . $producto->image, ['alt' => $producto->marca, 'class' => 'img-responsive center-block']) ?>
-                <div class="card-body">
-                    <p class="card-text">Modelo : <span class="text-secondary"><?= h($producto->modelo) ?></span></p>
-                    <p class="card-text">Precio : <span class="text-success"><?= h($producto->precio) ?> Bs</span></p>
-                    <?= $this->Html->link('Ver', ['action' => 'view', $producto->id], ['class' => 'btn btn-sm btn-info']) ?>
-                </div>
-            </div>
-        </div>
-        <?php endforeach; ?>
+  <div class="row">
+    <div class="col-md-12">
+      <h4>Lista de Productos</h4>
+      <div class="table-responsive">
+        <table id="mytable" class="table table-bordered table-striped">
+          <thead>
+            <th><?= $this->Paginator->sort('Modelo') ?></th>
+            <th><?= $this->Paginator->sort('Categoria') ?></th>
+            <th><?= $this->Paginator->sort('Stock') ?></th>
+            <th scope="col" class="actions"><?= __('Acciones') ?></th>
+          </thead>
+          <tbody>
+          <?php foreach ($productos as $producto): ?>
+            <tr>
+              <td><?= h($producto->modelo) ?></td>
+              <td><?= h($producto->categoria['nombre']) ?></td>
+              <td><?= h($producto->stock) ?></td>
+              <td class="actions">
+                    <?= $this->Html->link(__('Ver'), ['action' => 'view', $producto->id], ['class' => 'btn btn-primary btn-sm']) ?>
+                    <?= $this->Form->postLink(__('Eliminar'), ['action' => 'delete', $producto->id], ['confirm' => __('Estas seguro de eliminarlo'), 'class' => 'btn btn-danger btn-sm']) ?>
+                </td>
+            </tr>
+            <?php endforeach; ?>
+          </tbody>
+        </table>
+      </div>
     </div>
+  </div>
 </div>
+<nav aria-label="Page navigation">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <?= $this->Paginator->prev(__('< Anterior')) ?>
+    </li>
+    <li class="page-item"><?= $this->Paginator->numbers() ?></li>
+    <li class="page-item">
+    <?= $this->Paginator->next(__('Siguiente >')) ?>
+    </li>
+  </ul>
+</nav>

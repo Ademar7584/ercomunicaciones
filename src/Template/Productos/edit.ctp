@@ -23,6 +23,9 @@
           <?php echo $this->Form->input('estado', ['options' => ['0' => 'disponible', '1' => 'no disponible']]); ?>
         </div>
         <div class="mb-3">
+          <?php echo $this->Form->input('categoria_id') ?>
+        </div>
+        <div class="mb-3">
           <?php echo $this->Form->input('image', ['type' => 'file', 'class' => 'filestyle', 'data-buttonName' => 'btn-primary', 'data-buttonText' => 'Examinar']); ?>
         </div>
           <?= $this->Form->button(__('Editar'), ['class' => 'btn btn-primary']) ?>

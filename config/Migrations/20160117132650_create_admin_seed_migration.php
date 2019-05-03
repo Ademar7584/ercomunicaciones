@@ -16,6 +16,8 @@ class CreateAdminSeedMigration extends AbstractMigration
             'password' => function () {
                 return 'admin';
             },
+            'image' => 'NULL',
+            'image_dir' => 'NULL',
             'rol' => 'admin',
             'estado' => 1,
             'created' => function () use ($faker) {

@@ -24,20 +24,19 @@ class PromocionesController extends AppController
         $this->set('_serialize', ['promociones']);
     }
 
-    /**
-     * View method
-     *
-     * @param string|null $id Promocione id.
-     * @return \Cake\Http\Response|void
-     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
-     */
     public function view($id = null)
     {
         $promocione = $this->Promociones->get($id, [
             'contain' => []
         ]);
 
+        $status = [
+            true => 'Activo',
+            false => 'Inactivo',
+        ];
+
         $this->set('promocione', $promocione);
+        $this->set('status', $status);
         $this->set('_serialize', ['promocione']);
     }
 

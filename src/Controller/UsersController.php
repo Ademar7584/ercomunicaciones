@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\ORM\TableRegistry;
 
 class UsersController extends AppController
 {
@@ -44,7 +45,28 @@ class UsersController extends AppController
     }
 
     public function home() {
-        $this->render();
+        $categorias = TableRegistry::get('Categorias');
+        $categorias = $categorias->find('all', ['order' => ['created' => 'DESC'], 'limit' => 5]);
+        
+        $clientes = TableRegistry::get('Clientes');
+        $clientes = $clientes->find('all', ['order' => ['created' => 'DESC'], 'limit' => 5]);
+
+        $productos = TableRegistry::get('Productos');
+        $productos = $productos->find('all', ['order' => ['created' => 'DESC'], 'limit' => 5]);
+
+        $promociones = TableRegistry::get('Promociones');
+        $promociones = $promociones->find('all', ['order' => ['created' => 'DESC'], 'limit' => 5]);
+
+        $status = [
+            true => 'Activo',
+            false => 'Inactivo',
+        ];
+
+        $this->set('categorias', $categorias);
+        $this->set('clientes', $clientes);
+        $this->set('productos', $productos);
+        $this->set('promociones', $promociones);
+        $this->set('status', $status);
     }
 
     public function view($id = null)
@@ -53,7 +75,13 @@ class UsersController extends AppController
             'contain' => []
         ]);
 
+        $status = [
+            true => 'Activo',
+            false => 'Inactivo',
+        ];
+
         $this->set('user', $user);
+        $this->set('status', $status);
         $this->set('_serialize', ['user']);
     }
 

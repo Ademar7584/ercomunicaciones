@@ -13,7 +13,7 @@
  * @license       https://opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = 'CakePHP: the rapid development php framework';
+$cakeDescription = 'Proyecto ercomunicaciones';
 ?>
 <!DOCTYPE html>
 <html>
@@ -24,7 +24,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <?= $cakeDescription ?>:
         <?= $this->fetch('title') ?>
     </title>
-    <?= $this->Html->meta('icon') ?>
+    <!-- <?= $this->Html->meta('icon') ?> -->
 
     <?= $this->Html->css('bootstrap.min') ?>
     <?= $this->Html->script(['jquery-3.4.0.min', 'bootstrap.min', 'bootstrap-filestyle.min']) ?>

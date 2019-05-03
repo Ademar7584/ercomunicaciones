@@ -17,6 +17,9 @@ class ProductosController extends AppController
 
     public function index()
     {
+        $this->paginate = [
+            'contain' => ['Categorias']
+        ];
         $productos = $this->paginate($this->Productos);
 
         $this->set(compact('productos'));
@@ -26,10 +29,16 @@ class ProductosController extends AppController
     public function view($id = null)
     {
         $producto = $this->Productos->get($id, [
-            'contain' => []
+            'contain' => ['Categorias']
         ]);
+        
+        $status = [
+            true => 'Activo',
+            false => 'Inactivo',
+        ];
 
         $this->set('producto', $producto);
+        $this->set('status', $status);
         $this->set('_serialize', ['producto']);
     }
 
@@ -45,7 +54,7 @@ class ProductosController extends AppController
             }
             $this->Flash->error(__('El producto no pudo ser guardado, intente de nuevo.'));
         }
-        $categorias = $this->Productos->Categorias->find('list');
+        $categorias = $this->Productos->Categorias->find('list', ['keyField' => 'id', 'valueField' => 'nombre']);
         $this->set(compact('producto', 'categorias'));
         $this->set('_serialize', ['producto']);
     }
@@ -64,7 +73,8 @@ class ProductosController extends AppController
             }
             $this->Flash->error(__('El producto no pudo ser editado ,intente de nuevo'));
         }
-        $this->set(compact('producto'));
+        $categorias = $this->Productos->Categorias->find('list', ['keyField' => 'id', 'valueField' => 'nombre']);
+        $this->set(compact('producto', 'categorias'));
         $this->set('_serialize', ['producto']);
     }
 

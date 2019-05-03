@@ -17,7 +17,7 @@ class CreateProductosTable extends AbstractMigration
             ->AddColumn('modelo', 'string', array('limit' => 100))
             ->AddColumn('precio', 'integer', array('limit' => 11))
             ->AddColumn('stock', 'integer', array('limit' => 11))
-            ->AddColumn('estado', 'integer')
+            ->AddColumn('estado', 'boolean')
 			->AddColumn('image', 'string')
 			->AddColumn('image_dir', 'string')
             ->AddColumn('categoria_id', 'integer')

@@ -20,7 +20,7 @@
           <?php echo $this->Form->input('stock', array('type' => 'number'), 'required') ?>
         </div>
         <div class="mb-3">
-          <?php echo $this->Form->input('estado', ['options' => ['0' => 'disponible', '1' => 'no disponible']]); ?>
+          <?php echo $this->Form->input('estado', ['options' => ['1' => 'Activo', '0' => 'Inactivo']]); ?>
         </div>
         <div class="mb-3">
           <?php echo $this->Form->input('categoria_id') ?>

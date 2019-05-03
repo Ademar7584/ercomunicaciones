@@ -28,7 +28,13 @@ class ClientesController extends AppController
             'contain' => []
         ]);
 
+        $status = [
+            true => 'Activo',
+            false => 'Inactivo',
+        ];
+
         $this->set('cliente', $cliente);
+        $this->set('status', $status);
         $this->set('_serialize', ['cliente']);
     }
 

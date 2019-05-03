@@ -1,5 +1,5 @@
 <?= $this->Html->css('view')?>
-<div class="container emp-profile">
+<div class="container-fluid">
     <form method="post">
         <div class="row">
             <div class="col-md-4">
@@ -37,7 +37,7 @@
                                 <label>Correo Electronico</label>
                             </div>
                             <div class="col-md-6">
-                                <p><?= $user->email?></p>
+                                <p><?= h($user->email)?></p>
                             </div>
                         </div>
                         <div class="row">
@@ -45,14 +45,14 @@
                                 <label>Estado</label>
                             </div>
                             <div class="col-md-6">
-                                <p><?= $user->estado ?></p>
+                                <p><?php echo $status[$user->estado] ?></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-2">
-                <?= $this->Html->link('Editar Perfil', ['action' => 'edit', $user->id], ['class' => 'profile-edit-btn']) ?>
+                <?= $this->Html->link('Editar Perfil', ['action' => 'edit', $user->id], ['class' => 'btn btn-outline-success']) ?>
             </div>
         </div>
     </form>

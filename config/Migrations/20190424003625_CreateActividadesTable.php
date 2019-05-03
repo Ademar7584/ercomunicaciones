@@ -16,7 +16,7 @@ class CreateActividadesTable extends AbstractMigration
         $table->AddColumn('nombre', 'string', array('limit' => 100))
             ->AddColumn('descripcion', 'string')
             ->AddColumn('tipo', 'string', array('limit' => 200))
-            ->AddColumn('estado', 'integer')
+            ->AddColumn('estado', 'boolean')
             ->create();
     }
 }

@@ -20,7 +20,7 @@ class CreateClientesTable extends AbstractMigration
             ->AddColumn('telefono', 'string', array('limit' => 15))
             ->AddColumn('correo', 'string', array('limit' => 100))
             ->AddColumn('tipo', 'string', array('limit' => 20))
-            ->AddColumn('estado', 'integer')
+            ->AddColumn('estado', 'boolean')
             ->AddColumn('persona_id', 'integer')
             ->AddColumn('created', 'datetime')
             ->AddColumn('modified', 'datetime')

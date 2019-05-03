@@ -35,7 +35,7 @@
             </div>
         </div>
         <div class="col-2">
-            <?= $this->Html->link('Editar Categoria', ['action' => 'edit', $categoria->id], ['class' => 'profile-edit-btn']) ?>
+            <?= $this->Html->link('Editar', ['action' => 'edit', $categoria->id], ['class' => 'btn btn-outline-success']) ?>
         </div>
     </div>
 </div>

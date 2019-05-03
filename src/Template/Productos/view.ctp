@@ -5,7 +5,7 @@
                     <div class="card-body">
                         <div class="card-title mb-4">
                             <div class="d-flex justify-content-start">
-                                <div class="image-container">
+                                <div class="image-container" style="width: 18rem;">
                                     <?= $this->Html->image('../files/productos/image/' . $producto->image_dir . '/square_' . $producto->image, ['alt' => $producto->marca, 'class' => 'img-responsive img-thumbnail center-block']) ?>
                                 </div>
                                 <div class="userData ml-3">
@@ -14,8 +14,7 @@
                                     <h6 class="d-block text-success">Precio : <?= h($producto->precio)?> Bs</h6>
                                 </div>
                                 <div class="ml-auto">
-                                    <?= $this->Html->link(__('Editar'), ['controller' => 'Productos', 'action' => 'edit', $producto->id], ['class' => 'btn btn-secondary btn-sm']) ?>
-                                    <?= $this->Form->postLink(__('Eliminar'), ['controller' => 'Productos', 'action' => 'delete', $producto->id], ['confirm' => __('Estas seguro de eliminar'), 'class' => 'btn btn-danger btn-sm']) ?>  
+                                    <?= $this->Html->link(__('Editar'), ['controller' => 'Productos', 'action' => 'edit', $producto->id], ['class' => 'btn btn-outline-success']) ?>
                                 </div>
                             </div>
                         </div>
@@ -39,7 +38,7 @@
                                                 <label style="font-weight:bold;">Categoria</label>
                                             </div>
                                             <div class="col-md-8 col-6">
-                                                tipo de categoria
+                                                <td><?= h($producto->categoria['nombre'])?></td>
                                             </div>
                                         </div>
                                         <hr />
@@ -48,7 +47,7 @@
                                                 <label style="font-weight:bold;">Estado</label>
                                             </div>
                                             <div class="col-md-8 col-6">
-                                                <?= h($producto->estado) ?>
+                                            <?php echo $status[$producto->estado] ?>
                                             </div>
                                         </div>
                                         <hr />
@@ -60,7 +59,6 @@
                                                 <?= h($producto->created) ?>
                                             </div>
                                         </div>
-                                        <hr />
                                     </div>
                                 </div>
                             </div>

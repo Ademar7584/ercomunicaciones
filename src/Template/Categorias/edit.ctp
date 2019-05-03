@@ -1,30 +1,24 @@
-<?php
-/**
-  * @var \App\View\AppView $this
-  */
-?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Form->postLink(
-                __('Delete'),
-                ['action' => 'delete', $categoria->id],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $categoria->id)]
-            )
-        ?></li>
-        <li><?= $this->Html->link(__('List Categorias'), ['action' => 'index']) ?></li>
-    </ul>
-</nav>
-<div class="categorias form large-9 medium-8 columns content">
-    <?= $this->Form->create($categoria) ?>
-    <fieldset>
-        <legend><?= __('Edit Categoria') ?></legend>
-        <?php
-            echo $this->Form->control('nombre');
-            echo $this->Form->control('descripcion');
-            echo $this->Form->control('tipo');
-        ?>
-    </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
-    <?= $this->Form->end() ?>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 order-md-1">
+      <h4 class="mb-3">Editar Categoria</h4>
+      <?= $this->Form->create($categoria, ['novalidate']) ?>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">Nombre</label>
+            <?php echo $this->Form->input('nombre', ['placeholder' => 'Coloque el nombre', 'label' => false, 'required']) ?>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Tipo</label>
+            <?php echo $this->Form->input('tipo', ['placeholder' => 'Coloque el tipo', 'label' => false, 'required']) ?>
+          </div>
+        </div>
+        <div class="mb-3">
+        <label for="lastName">Descripcion</label>
+          <?php echo $this->Form->input('descripcion', ['placeholder' => 'Coloque la descripcion', 'label' => false, 'required']); ?>
+        </div>
+          <?= $this->Form->button(__('Editar'), ['class' => 'btn btn-primary']) ?>
+        <?= $this->Form->end() ?>
+    </div>
+  </div>
 </div>

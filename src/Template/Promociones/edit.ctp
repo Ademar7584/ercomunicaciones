@@ -14,7 +14,7 @@
           </div>
           <div class="col-md-6 mb-3">
             <label for="lastName">Estado</label>
-            <?php echo $this->Form->input('tipo', ['placeholder' => 'Coloque el tipo', 'label' => false, 'required']) ?>
+            <?php echo $this->Form->input('estado', ['options' => ['1' => 'Activo', '0' => 'Inactivo'], 'label' => false, 'required']) ?>
           </div>
         </div>
         <div class="mb-3">
