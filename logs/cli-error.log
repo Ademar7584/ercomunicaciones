@@ -362,3 +362,534 @@ Stack Trace:
 #32 {main}
 
 
+2019-05-03 16:22:59 Error: [Error] Class 'DefaultPasswordHasher' not found in C:\xampp\htdocs\ercomunicaciones\config\Seeds\UserSeed.php on line 21
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(154): UserSeed->run()
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(395): Phinx\Migration\Manager\Environment->executeSeed(Object(UserSeed))
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(514): Phinx\Migration\Manager->executeSeed('default', Object(UserSeed))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(110): Phinx\Migration\Manager->seed('default')
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(874): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(130): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(506): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#14 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+2019-05-03 16:44:06 Error: [InvalidArgumentException] Unknown formatter "names" in C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php on line 242
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(222): Faker\Generator->getFormatter('names')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(268): Faker\Generator->format('names')
+#2 C:\xampp\htdocs\ercomunicaciones\config\Seeds\UsersSeed.php(29): Faker\Generator->__get('names')
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(154): UsersSeed->run()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(395): Phinx\Migration\Manager\Environment->executeSeed(Object(UsersSeed))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(520): Phinx\Migration\Manager->executeSeed('default', Object(UsersSeed))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(114): Phinx\Migration\Manager->seed('default', 'UsersSeed')
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(874): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(130): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(506): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#17 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2019-05-03 16:45:50 Error: [InvalidArgumentException] Unknown formatter "names" in C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php on line 242
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(222): Faker\Generator->getFormatter('names')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(279): Faker\Generator->format('names', Array)
+#2 C:\xampp\htdocs\ercomunicaciones\config\Seeds\UsersSeed.php(29): Faker\Generator->__call('names', Array)
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(154): UsersSeed->run()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(395): Phinx\Migration\Manager\Environment->executeSeed(Object(UsersSeed))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(520): Phinx\Migration\Manager->executeSeed('default', Object(UsersSeed))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(114): Phinx\Migration\Manager->seed('default', 'UsersSeed')
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(874): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(130): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(506): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#17 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2019-05-03 18:18:53 Error: [InvalidArgumentException] There was a problem connecting to the database: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+ in C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php on line 115
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(238): Phinx\Db\Adapter\MysqlAdapter->connect()
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\CakeAdapter.php(57): Phinx\Db\Adapter\PdoAdapter->getConnection()
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\CommandTrait.php(78): Migrations\CakeAdapter->__construct(Object(Phinx\Db\Adapter\MysqlAdapter), Object(Cake\Database\Connection))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\Seed.php(70): Migrations\Command\Seed->bootstrap(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(874): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(130): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(506): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#12 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
+2019-05-03 18:19:32 Error: [InvalidArgumentException] There was a problem connecting to the database: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+ in C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php on line 115
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(238): Phinx\Db\Adapter\MysqlAdapter->connect()
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\CakeAdapter.php(57): Phinx\Db\Adapter\PdoAdapter->getConnection()
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\CommandTrait.php(78): Migrations\CakeAdapter->__construct(Object(Phinx\Db\Adapter\MysqlAdapter), Object(Cake\Database\Connection))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\Seed.php(70): Migrations\Command\Seed->bootstrap(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(874): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(130): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(506): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#12 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
+2019-05-03 18:19:43 Error: [ParseError] syntax error, unexpected '}' in C:\xampp\htdocs\ercomunicaciones\config\Seeds\CategoriasSeed.php on line 20
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\CakeManager.php(351): Phinx\Migration\Manager->getSeeds()
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(508): Migrations\CakeManager->getSeeds()
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(114): Phinx\Migration\Manager->seed('default', 'CategoriasSeed')
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(874): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(130): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(506): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#13 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#14 {main}
+
+
+2019-05-03 18:20:04 Error: [InvalidArgumentException] Unknown formatter "nombre" in C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php on line 242
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(222): Faker\Generator->getFormatter('nombre')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(268): Faker\Generator->format('nombre')
+#2 C:\xampp\htdocs\ercomunicaciones\config\Seeds\CategoriasSeed.php(14): Faker\Generator->__get('nombre')
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(154): CategoriasSeed->run()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(395): Phinx\Migration\Manager\Environment->executeSeed(Object(CategoriasSeed))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(520): Phinx\Migration\Manager->executeSeed('default', Object(CategoriasSeed))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(114): Phinx\Migration\Manager->seed('default', 'CategoriasSeed')
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(874): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(130): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(506): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#17 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2019-05-03 18:20:27 Error: [InvalidArgumentException] Unknown formatter "nombre" in C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php on line 242
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(222): Faker\Generator->getFormatter('nombre')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(279): Faker\Generator->format('nombre', Array)
+#2 C:\xampp\htdocs\ercomunicaciones\config\Seeds\CategoriasSeed.php(14): Faker\Generator->__call('nombre', Array)
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(154): CategoriasSeed->run()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(395): Phinx\Migration\Manager\Environment->executeSeed(Object(CategoriasSeed))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(520): Phinx\Migration\Manager->executeSeed('default', Object(CategoriasSeed))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(114): Phinx\Migration\Manager->seed('default', 'CategoriasSeed')
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(874): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(130): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(506): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#17 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2019-05-03 18:21:31 Error: [InvalidArgumentException] Unknown formatter "nombre" in C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php on line 242
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(222): Faker\Generator->getFormatter('nombre')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(268): Faker\Generator->format('nombre')
+#2 C:\xampp\htdocs\ercomunicaciones\config\Seeds\CategoriasSeed.php(14): Faker\Generator->__get('nombre')
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(154): CategoriasSeed->run()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(395): Phinx\Migration\Manager\Environment->executeSeed(Object(CategoriasSeed))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(520): Phinx\Migration\Manager->executeSeed('default', Object(CategoriasSeed))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(114): Phinx\Migration\Manager->seed('default', 'CategoriasSeed')
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(874): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(130): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(506): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#17 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2019-05-03 18:24:58 Error: [InvalidArgumentException] Unknown formatter "nombre" in C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php on line 242
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(222): Faker\Generator->getFormatter('nombre')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(268): Faker\Generator->format('nombre')
+#2 C:\xampp\htdocs\ercomunicaciones\config\Seeds\CategoriasSeed.php(14): Faker\Generator->__get('nombre')
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(154): CategoriasSeed->run()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(395): Phinx\Migration\Manager\Environment->executeSeed(Object(CategoriasSeed))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(520): Phinx\Migration\Manager->executeSeed('default', Object(CategoriasSeed))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(114): Phinx\Migration\Manager->seed('default', 'CategoriasSeed')
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(874): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(130): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(506): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#17 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2019-05-03 18:25:29 Error: [InvalidArgumentException] Unknown formatter "descripcion" in C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php on line 242
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(222): Faker\Generator->getFormatter('descripcion')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(268): Faker\Generator->format('descripcion')
+#2 C:\xampp\htdocs\ercomunicaciones\config\Seeds\CategoriasSeed.php(14): Faker\Generator->__get('descripcion')
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(154): CategoriasSeed->run()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(395): Phinx\Migration\Manager\Environment->executeSeed(Object(CategoriasSeed))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(520): Phinx\Migration\Manager->executeSeed('default', Object(CategoriasSeed))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(114): Phinx\Migration\Manager->seed('default', 'CategoriasSeed')
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(874): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(130): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(506): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#17 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2019-05-03 18:26:06 Error: [InvalidArgumentException] Unknown formatter "descripcion" in C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php on line 242
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(222): Faker\Generator->getFormatter('descripcion')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(268): Faker\Generator->format('descripcion')
+#2 C:\xampp\htdocs\ercomunicaciones\config\Seeds\CategoriasSeed.php(16): Faker\Generator->__get('descripcion')
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(154): CategoriasSeed->run()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(395): Phinx\Migration\Manager\Environment->executeSeed(Object(CategoriasSeed))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(520): Phinx\Migration\Manager->executeSeed('default', Object(CategoriasSeed))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(114): Phinx\Migration\Manager->seed('default', 'CategoriasSeed')
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(874): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(130): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(506): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#17 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2019-05-03 18:29:27 Error: [InvalidArgumentException] Unknown formatter "description" in C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php on line 242
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(222): Faker\Generator->getFormatter('description')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(268): Faker\Generator->format('description')
+#2 C:\xampp\htdocs\ercomunicaciones\config\Seeds\CategoriasSeed.php(15): Faker\Generator->__get('description')
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(154): CategoriasSeed->run()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(395): Phinx\Migration\Manager\Environment->executeSeed(Object(CategoriasSeed))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(520): Phinx\Migration\Manager->executeSeed('default', Object(CategoriasSeed))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(114): Phinx\Migration\Manager->seed('default', 'CategoriasSeed')
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(874): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(130): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(506): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#17 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2019-05-03 18:29:54 Error: [InvalidArgumentException] Unknown formatter "description" in C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php on line 242
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(222): Faker\Generator->getFormatter('description')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(279): Faker\Generator->format('description', Array)
+#2 C:\xampp\htdocs\ercomunicaciones\config\Seeds\CategoriasSeed.php(15): Faker\Generator->__call('description', Array)
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(154): CategoriasSeed->run()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(395): Phinx\Migration\Manager\Environment->executeSeed(Object(CategoriasSeed))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(520): Phinx\Migration\Manager->executeSeed('default', Object(CategoriasSeed))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(114): Phinx\Migration\Manager->seed('default', 'CategoriasSeed')
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(874): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(130): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(506): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#17 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2019-05-03 18:30:34 Error: [InvalidArgumentException] Unknown formatter "descripcion" in C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php on line 242
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(222): Faker\Generator->getFormatter('descripcion')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(279): Faker\Generator->format('descripcion', Array)
+#2 C:\xampp\htdocs\ercomunicaciones\config\Seeds\CategoriasSeed.php(15): Faker\Generator->__call('descripcion', Array)
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(154): CategoriasSeed->run()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(395): Phinx\Migration\Manager\Environment->executeSeed(Object(CategoriasSeed))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(520): Phinx\Migration\Manager->executeSeed('default', Object(CategoriasSeed))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(114): Phinx\Migration\Manager->seed('default', 'CategoriasSeed')
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(874): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(130): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(506): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#17 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2019-05-03 18:31:36 Error: [InvalidArgumentException] Unknown formatter "descripcion" in C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php on line 242
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(222): Faker\Generator->getFormatter('descripcion')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(268): Faker\Generator->format('descripcion')
+#2 C:\xampp\htdocs\ercomunicaciones\config\Seeds\CategoriasSeed.php(15): Faker\Generator->__get('descripcion')
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(154): CategoriasSeed->run()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(395): Phinx\Migration\Manager\Environment->executeSeed(Object(CategoriasSeed))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(520): Phinx\Migration\Manager->executeSeed('default', Object(CategoriasSeed))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(114): Phinx\Migration\Manager->seed('default', 'CategoriasSeed')
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(874): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(130): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(506): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#17 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2019-05-03 18:45:37 Error: [Error] Call to undefined function numberBetween() in C:\xampp\htdocs\ercomunicaciones\config\Seeds\ProductosSeed.php on line 15
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(154): ProductosSeed->run()
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(395): Phinx\Migration\Manager\Environment->executeSeed(Object(ProductosSeed))
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(520): Phinx\Migration\Manager->executeSeed('default', Object(ProductosSeed))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(114): Phinx\Migration\Manager->seed('default', 'ProductosSeed')
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(874): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(130): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(506): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#14 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+2019-05-03 18:52:28 Error: [InvalidArgumentException] Unknown formatter "dni" in C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php on line 242
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(222): Faker\Generator->getFormatter('dni')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(268): Faker\Generator->format('dni')
+#2 C:\xampp\htdocs\ercomunicaciones\config\Seeds\ClientesSeed.php(15): Faker\Generator->__get('dni')
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(154): ClientesSeed->run()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(395): Phinx\Migration\Manager\Environment->executeSeed(Object(ClientesSeed))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(520): Phinx\Migration\Manager->executeSeed('default', Object(ClientesSeed))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(114): Phinx\Migration\Manager->seed('default', 'ClientesSeed')
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(874): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(130): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(506): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#17 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2019-05-03 18:53:12 Error: [InvalidArgumentException] Unknown formatter "dni" in C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php on line 242
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(222): Faker\Generator->getFormatter('dni')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(279): Faker\Generator->format('dni', Array)
+#2 C:\xampp\htdocs\ercomunicaciones\config\Seeds\ClientesSeed.php(15): Faker\Generator->__call('dni', Array)
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(154): ClientesSeed->run()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(395): Phinx\Migration\Manager\Environment->executeSeed(Object(ClientesSeed))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(520): Phinx\Migration\Manager->executeSeed('default', Object(ClientesSeed))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(114): Phinx\Migration\Manager->seed('default', 'ClientesSeed')
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(874): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(130): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(506): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#17 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2019-05-03 18:53:58 Error: [InvalidArgumentException] Unknown formatter "nationalCode" in C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php on line 242
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(222): Faker\Generator->getFormatter('nationalCode')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(268): Faker\Generator->format('nationalCode')
+#2 C:\xampp\htdocs\ercomunicaciones\config\Seeds\ClientesSeed.php(15): Faker\Generator->__get('nationalCode')
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(154): ClientesSeed->run()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(395): Phinx\Migration\Manager\Environment->executeSeed(Object(ClientesSeed))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(520): Phinx\Migration\Manager->executeSeed('default', Object(ClientesSeed))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(114): Phinx\Migration\Manager->seed('default', 'ClientesSeed')
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(874): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(130): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(506): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#17 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2019-05-03 18:58:21 Error: [InvalidArgumentException] Unknown formatter "dni" in C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php on line 242
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(222): Faker\Generator->getFormatter('dni')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\fzaninotto\faker\src\Faker\Generator.php(268): Faker\Generator->format('dni')
+#2 C:\xampp\htdocs\ercomunicaciones\config\Seeds\ClientesSeed.php(15): Faker\Generator->__get('dni')
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(154): ClientesSeed->run()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(395): Phinx\Migration\Manager\Environment->executeSeed(Object(ClientesSeed))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(520): Phinx\Migration\Manager->executeSeed('default', Object(ClientesSeed))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(114): Phinx\Migration\Manager->seed('default', 'ClientesSeed')
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(874): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(130): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(506): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#17 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2019-05-03 19:07:48 Error: [InvalidArgumentException] The seed class "Promociones" does not exist in C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php on line 522
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(114): Phinx\Migration\Manager->seed('default', 'Promociones')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(874): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(130): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(506): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#11 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#12 {main}
+
+
+2019-05-03 19:08:26 Error: [InvalidArgumentException] The seed class "Promociones" does not exist in C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php on line 522
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(114): Phinx\Migration\Manager->seed('default', 'Promociones')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(874): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(130): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(506): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#11 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#12 {main}
+
+
+2019-05-03 19:41:43 Warning: Warning (2): require_once(C:\xampp\htdocs\ercomunicaciones\config\Seeds\Clientes.php): failed to open stream: No such file or directory in [C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\AbstractSeed.php, line 106]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+require_once - ROOT\vendor\cakephp\migrations\src\AbstractSeed.php, line 106
+Migrations\AbstractSeed::runCall() - ROOT\vendor\cakephp\migrations\src\AbstractSeed.php, line 106
+Migrations\AbstractSeed::call() - ROOT\vendor\cakephp\migrations\src\AbstractSeed.php, line 53
+DatabaseSeed::run() - ROOT\config\Seeds\DatabaseSeed.php, line 27
+Phinx\Migration\Manager\Environment::executeSeed() - ROOT\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php, line 154
+Phinx\Migration\Manager::executeSeed() - ROOT\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php, line 395
+Phinx\Migration\Manager::seed() - ROOT\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php, line 520
+Phinx\Console\Command\SeedRun::execute() - ROOT\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php, line 114
+Migrations\Command\Seed::parentExecute() - ROOT\vendor\cakephp\migrations\src\Command\CommandTrait.php, line 35
+Migrations\Command\Seed::execute() - ROOT\vendor\cakephp\migrations\src\Command\Seed.php, line 72
+Symfony\Component\Console\Command\Command::run() - ROOT\vendor\symfony\console\Command\Command.php, line 264
+Symfony\Component\Console\Application::doRunCommand() - ROOT\vendor\symfony\console\Application.php, line 874
+Symfony\Component\Console\Application::doRun() - ROOT\vendor\symfony\console\Application.php, line 228
+Symfony\Component\Console\Application::run() - ROOT\vendor\symfony\console\Application.php, line 130
+Migrations\Shell\MigrationsShell::main() - ROOT\vendor\cakephp\migrations\src\Shell\MigrationsShell.php, line 101
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 506
+Migrations\Shell\MigrationsShell::runCommand() - ROOT\vendor\cakephp\migrations\src\Shell\MigrationsShell.php, line 156
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 140
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2019-05-03 19:52:43 Error: [RuntimeException] Unknown command `cake migration`. Run `cake --help` to get the list of valid commands. in C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php on line 173
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(136): Cake\Console\CommandRunner->getShell(Object(Cake\Console\ConsoleIo), Object(Cake\Console\CommandCollection), 'migration')
+#1 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+

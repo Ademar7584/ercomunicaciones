@@ -2,7 +2,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
-      <h4>Lista de Usuarios</h4>
+      <h3>Lista de Usuarios <?= $this->Html->link(__('Crear Usuario'), ['controller' => 'Users', 'action' => 'add'], ['class' => 'btn btn-outline-primary float-right']) ?></h3>
       <div class="table-responsive">
         <table id="mytable" class="table table-bordered table-striped">
           <thead>

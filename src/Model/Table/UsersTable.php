@@ -30,6 +30,12 @@ class UsersTable extends Table
                         'h' => 700,
                         'crop' => true,
                         'jpeg_quality'	=> 100
+                    ],
+                    'portrait' => [
+                        'w' => 150,
+                        'h' => 150,
+                        'crop' => true,
+                        'jpeg_quality'	=> 100
                     ]
                 ],
                 'thumbnailMethod' => 'gd'
@@ -60,7 +66,7 @@ class UsersTable extends Table
             ->provider('proffer', 'Proffer\Model\Validation\ProfferRules')
             ->add('image', 'proffer', [
                 'rule' => ['dimensions', [
-                    'min' => ['w' => 300, 'h' => 300],
+                    'min' => ['w' => 200, 'h' => 200],
                     'max' => ['w' => 1500, 'h' => 1500]
                 ]],
                 'message' => 'La imagen no tiene correctas dimensiones.',
@@ -71,8 +77,8 @@ class UsersTable extends Table
                 'message' => 'La imagen no tiene una correcta extensión.',
             ])
             ->add('image', 'fileSize', [
-                'rule' => ['fileSize', '<=', '1MB'],
-                'message' => 'La imagen no debe exceder 1MB.',
+                'rule' => ['fileSize', '<=', '10MB'],
+                'message' => 'La imagen no debe exceder 10MB.',
             ])
             ->add('image', 'mimeType', [
                 'rule' => ['mimeType', ['image/jpeg', 'image/png']],

@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
-      <h4>Lista de Categorias</h4>
+      <h3>Lista de Categorias <?= $this->Html->link(__('Crear Categoria'), ['controller' => 'Categorias', 'action' => 'add'], ['class' => 'btn btn-outline-primary float-right']) ?></h3>
       <div class="table-responsive">
         <table id="mytable" class="table table-bordered table-striped">
           <thead>

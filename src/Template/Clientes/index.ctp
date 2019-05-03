@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
-      <h4>Lista de Clientes</h4>
+      <h3>Lista de Clientes <?= $this->Html->link(__('Crear Cliente'), ['controller' => 'Clientes', 'action' => 'add'], ['class' => 'btn btn-outline-primary float-right']) ?></h3>
       <div class="table-responsive">
         <table id="mytable" class="table table-bordered table-striped">
           <thead>

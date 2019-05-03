@@ -52,7 +52,7 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false"><span class="user-avatar pull-left" style="margin-right:8px; margin-top:-5px;">
-              <?= $this->Html->image('../files/users/image/' . $current_user['image_dir'] . '/square_' . $current_user['image'], ['class' => 'img-responsive img-circle', 'width' => '30px', 'height' => '30px']) ?>
+              <?= $this->Html->image('../files/users/image/' . $current_user['image_dir'] . '/portrait_' . $current_user['image'], ['class' => 'img-responsive img-circle', 'width' => '30px', 'height' => '30px']) ?>
           </span>
           <span class="user-name">
             <?= $current_user['names'] ?>

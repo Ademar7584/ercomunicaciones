@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
-      <h4>Lista de Productos</h4>
+      <h3>Lista de Productos <?= $this->Html->link(__('Crear Producto'), ['controller' => 'Productos', 'action' => 'add'], ['class' => 'btn btn-outline-primary float-right']) ?></h3>
       <div class="table-responsive">
         <table id="mytable" class="table table-bordered table-striped">
           <thead>
@@ -15,7 +15,7 @@
           <?php foreach ($productos as $producto): ?>
             <tr>
             <td>
-                 <?= $this->Html->image('../files/productos/image/' . $producto->image_dir . '/square_' . $producto->image, ['alt' => $producto->marca, 'class' => 'img-responsive', 'style' => 'width: 4rem;']) ?>
+                 <?= $this->Html->image('../files/productos/image/' . $producto->image_dir . '/portrait_' . $producto->image, ['alt' => $producto->marca, 'class' => 'img-responsive', 'style' => 'width: 4rem;']) ?>
                               </td>
               <td><?= h($producto->modelo) ?></td>
               <td><?= h($producto->categoria['nombre']) ?></td>

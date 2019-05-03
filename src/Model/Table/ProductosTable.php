@@ -31,7 +31,13 @@ class ProductosTable extends Table
                 'thumbnailSizes' => [
                     'square' => [
                         'w' => 700,
-                        'h' => 700,
+                        'h' => 600,
+                        'crop' => true,
+                        'jpeg_quality'	=> 100
+                    ],
+                    'portrait' => [
+                        'w' => 150,
+                        'h' => 150,
                         'crop' => true,
                         'jpeg_quality'	=> 100
                     ]
@@ -85,8 +91,8 @@ class ProductosTable extends Table
                 'message' => 'La imagen no tiene una correcta extensión.',
             ])
             ->add('image', 'fileSize', [
-                'rule' => ['fileSize', '<=', '1MB'],
-                'message' => 'La imagen no debe exceder 1MB.',
+                'rule' => ['fileSize', '<=', '10MB'],
+                'message' => 'La imagen no debe exceder 10MB.',
             ])
             ->add('image', 'mimeType', [
                 'rule' => ['mimeType', ['image/jpeg', 'image/png']],

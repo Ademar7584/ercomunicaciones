@@ -16,6 +16,8 @@ class CreateNotificacionesClienteTable extends AbstractMigration
         $table->AddColumn('nombre', 'string', array('limit'=> 100))
             ->AddColumn('cliente_id', 'integer')
             ->AddColumn('promocione_id', 'integer')
+            ->AddColumn('created', 'datetime')
+            ->AddColumn('modified', 'datetime')
             ->create();
     }
 }
