@@ -12,8 +12,8 @@ class UsersController extends AppController
     }
 
     public function isAuthorized($user) {
-        if(isset($user['rol']) and $user['rol'] === 'user') {
-            if(in_array($this->request->action, ['home', 'logout', 'view'])) {
+        if(isset($user['rol']) and $user['rol'] === 'user' or $user['rol'] === 'cliente') {
+            if(in_array($this->request->action, ['home', 'logout', 'view', 'edit'])) {
                 return true;
             }
         }

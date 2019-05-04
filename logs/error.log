@@ -18079,3 +18079,166 @@ Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
 
 
 
+2019-05-04 00:58:35 Error: [PDOException] SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+
+Request URL: /
+Referer URL: http://localhost/ercomunicaciones/
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(47): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(104): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Connection.php(355): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Table.php(531): Cake\Database\Connection->getSchemaCollection()
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Table.php(589): Cake\ORM\Table->getSchema()
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\davidyell\proffer\src\Model\Behavior\ProfferBehavior.php(38): Cake\ORM\Table->schema()
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Behavior.php(166): Proffer\Model\Behavior\ProfferBehavior->initialize(Array)
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\BehaviorRegistry.php(134): Cake\ORM\Behavior->__construct(Object(App\Model\Table\UsersTable), Array)
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php(96): Cake\ORM\BehaviorRegistry->_create('Proffer\\Model\\B...', 'Proffer', Array)
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Table.php(826): Cake\Core\ObjectRegistry->load('Proffer.Proffer', Array)
+#14 C:\xampp\htdocs\ercomunicaciones\src\Model\Table\UsersTable.php(41): Cake\ORM\Table->addBehavior('Proffer.Proffer', Array)
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Table.php(291): App\Model\Table\UsersTable->initialize(Array)
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(249): Cake\ORM\Table->__construct(Array)
+#17 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(216): Cake\ORM\Locator\TableLocator->_create(Array)
+#18 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\TableRegistry.php(132): Cake\ORM\Locator\TableLocator->get('Users', Array)
+#19 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Auth\BaseAuthenticate.php(143): Cake\ORM\TableRegistry::get('Users')
+#20 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Auth\BaseAuthenticate.php(107): Cake\Auth\BaseAuthenticate->_query('admin@test.com')
+#21 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Auth\FormAuthenticate.php(78): Cake\Auth\BaseAuthenticate->_findUser('admin@test.com', 'admin')
+#22 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(820): Cake\Auth\FormAuthenticate->authenticate(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\ercomunicaciones\src\Controller\UsersController.php(25): Cake\Controller\Component\AuthComponent->identify()
+#24 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\UsersController->login()
+#25 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#26 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#27 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#29 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#31 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#32 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#33 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#34 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#35 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#36 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#38 {main}
+
+
+2019-05-04 00:58:48 Error: [PDOException] SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+
+Request URL: /
+Referer URL: http://localhost/ercomunicaciones/
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(47): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(104): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Connection.php(355): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Table.php(531): Cake\Database\Connection->getSchemaCollection()
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Table.php(589): Cake\ORM\Table->getSchema()
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\davidyell\proffer\src\Model\Behavior\ProfferBehavior.php(38): Cake\ORM\Table->schema()
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Behavior.php(166): Proffer\Model\Behavior\ProfferBehavior->initialize(Array)
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\BehaviorRegistry.php(134): Cake\ORM\Behavior->__construct(Object(App\Model\Table\UsersTable), Array)
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php(96): Cake\ORM\BehaviorRegistry->_create('Proffer\\Model\\B...', 'Proffer', Array)
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Table.php(826): Cake\Core\ObjectRegistry->load('Proffer.Proffer', Array)
+#14 C:\xampp\htdocs\ercomunicaciones\src\Model\Table\UsersTable.php(41): Cake\ORM\Table->addBehavior('Proffer.Proffer', Array)
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Table.php(291): App\Model\Table\UsersTable->initialize(Array)
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(249): Cake\ORM\Table->__construct(Array)
+#17 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(216): Cake\ORM\Locator\TableLocator->_create(Array)
+#18 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\TableRegistry.php(132): Cake\ORM\Locator\TableLocator->get('Users', Array)
+#19 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Auth\BaseAuthenticate.php(143): Cake\ORM\TableRegistry::get('Users')
+#20 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Auth\BaseAuthenticate.php(107): Cake\Auth\BaseAuthenticate->_query('admin@test.com')
+#21 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Auth\FormAuthenticate.php(78): Cake\Auth\BaseAuthenticate->_findUser('admin@test.com', 'admin')
+#22 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(820): Cake\Auth\FormAuthenticate->authenticate(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\ercomunicaciones\src\Controller\UsersController.php(25): Cake\Controller\Component\AuthComponent->identify()
+#24 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\UsersController->login()
+#25 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#26 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#27 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#29 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#31 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#32 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#33 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#34 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#35 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#36 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#38 {main}
+
+
+2019-05-04 00:59:13 Error: [PDOException] SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+
+Request URL: /
+Referer URL: http://localhost/ercomunicaciones/
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(47): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(104): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Connection.php(355): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Table.php(531): Cake\Database\Connection->getSchemaCollection()
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Table.php(589): Cake\ORM\Table->getSchema()
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\davidyell\proffer\src\Model\Behavior\ProfferBehavior.php(38): Cake\ORM\Table->schema()
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Behavior.php(166): Proffer\Model\Behavior\ProfferBehavior->initialize(Array)
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\BehaviorRegistry.php(134): Cake\ORM\Behavior->__construct(Object(App\Model\Table\UsersTable), Array)
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php(96): Cake\ORM\BehaviorRegistry->_create('Proffer\\Model\\B...', 'Proffer', Array)
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Table.php(826): Cake\Core\ObjectRegistry->load('Proffer.Proffer', Array)
+#14 C:\xampp\htdocs\ercomunicaciones\src\Model\Table\UsersTable.php(41): Cake\ORM\Table->addBehavior('Proffer.Proffer', Array)
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Table.php(291): App\Model\Table\UsersTable->initialize(Array)
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(249): Cake\ORM\Table->__construct(Array)
+#17 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(216): Cake\ORM\Locator\TableLocator->_create(Array)
+#18 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\TableRegistry.php(132): Cake\ORM\Locator\TableLocator->get('Users', Array)
+#19 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Auth\BaseAuthenticate.php(143): Cake\ORM\TableRegistry::get('Users')
+#20 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Auth\BaseAuthenticate.php(107): Cake\Auth\BaseAuthenticate->_query('admin@test.com')
+#21 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Auth\FormAuthenticate.php(78): Cake\Auth\BaseAuthenticate->_findUser('admin@test.com', 'admin')
+#22 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(820): Cake\Auth\FormAuthenticate->authenticate(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\ercomunicaciones\src\Controller\UsersController.php(25): Cake\Controller\Component\AuthComponent->identify()
+#24 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\UsersController->login()
+#25 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#26 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#27 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#29 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#31 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#32 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#33 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#34 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#35 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#36 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#38 {main}
+
+
+2019-05-04 01:01:35 Error: [Cake\Network\Exception\SocketException] SMTP Error: 530 5.5.1  https://support.google.com/mail/?p=WantAuthError s78sm1206420vke.17 - gsmtp
+Request URL: /clientes/send-mail
+Referer URL: http://localhost/ercomunicaciones/clientes/view/2
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(365): Cake\Mailer\Transport\SmtpTransport->_smtpSend('MAIL FROM:<admi...')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(168): Cake\Mailer\Transport\SmtpTransport->_sendRcpt(Object(Cake\Mailer\Email))
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Email.php(2058): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#3 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(110): Cake\Mailer\Email->send()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClientesController->sendMail()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#18 {main}
+
+
