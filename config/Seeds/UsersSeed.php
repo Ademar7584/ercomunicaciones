@@ -19,6 +19,7 @@ class UsersSeed extends AbstractSeed
                 'password' => $password,
                 'image' => 'perfil.png',
                 'image_dir' => '89ffcee1-7ce0-419a-b989-78a696038a03',
+                'persona_id' => 'NULL',
                 'rol' => $faker->randomElement($array = array('user', 'cliente')),
                 'estado' => 1,
                 'created'    => date("Y-m-d H:i:s"),

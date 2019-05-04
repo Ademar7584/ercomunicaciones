@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Mailer\Email;
 
 class ClientesController extends AppController
 {
@@ -83,5 +84,38 @@ class ClientesController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
+    }
+
+    public function sendMail() {
+        Email::setConfigTransport('gmail', [
+            'host' => 'smtp.gmail.com',
+            'port' => 587,
+            'username' => 'alanfernando93.am@gmail.com',
+            'password' => 'alanmamanihuayllani',
+            'className' => 'Smtp',
+            'tls' => true
+        ]);
+        if ($this->request->is('post')) {
+            $correo = new Email();
+            $correo->setTransport('gmail');
+            $correo->setTemplate('email');
+            $correo->setEmailFormat('html');
+            $correo->setTo($this->request->getData('email'));
+            $correo->setFrom($this->Auth->user('email'));
+            $correo->setSubject('Correo de Notificacion');
+            $correo->setViewVars([
+                'message' => $this->request->getData('message'),
+            ]);
+
+            if ($correo->send()) {
+                $this->Flash->success(__('Correo enviado'));
+
+                return $this->redirect(['action' => 'view', $this->request->getData('id')]);
+            } else {
+                $this->Flash->error(__('The order could not be saved. Please, try again.'));
+                return $this->redirect(['action' => 'index']);
+            }
+        }
+        $this->setAction('view');
     }
 }

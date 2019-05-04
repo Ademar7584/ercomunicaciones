@@ -82,29 +82,32 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
+                    <?= $this->Flash->render('cliente') ?>
                         <h5 class="modal-title" id="exampleModalLongTitle">Formulario de Envio</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <form>
+                    <?= $this->Form->create(null, ['url' => ['controller' => 'Clientes', 'action' => 'sendMail']]) ?>
                         <div class="modal-body">
-
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Correo Electronico</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" value="<?= $cliente->correo ?>">
+                                <input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" value="<?= $cliente->correo?>">
+                            </div>
+                            <div class="form-group">
+                            <input id="id" name="id" type="hidden" value="<?= $cliente->id?>">
                             </div>
                             <div class="form-group">
                                 <label for="exampleFormControlTextarea1">Mensaje</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <textarea class="form-control"  name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cerrar</button>
-                            <button type="button" class="btn btn-primary btn-sm">Enviar</button>
+                            <input type="submit" class="btn btn-primary btn-sm" value="<?= __('Enviar Correo') ?>">
                         </div>
-                    </form>
+                    <?= $this->Form->end() ?>
                 </div>
             </div>
         </div>

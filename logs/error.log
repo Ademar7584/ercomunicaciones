@@ -17081,3 +17081,1001 @@ Stack Trace:
 #13 {main}
 
 
+2019-05-03 21:54:46 Error: [Cake\Routing\Exception\MissingControllerException] Controller class SendComment could not be found.
+Exception Attributes: array (
+  'class' => 'SendComment',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /sendComment
+Referer URL: http://localhost/ercomunicaciones/clientes/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2019-05-03 21:56:33 Error: [Cake\Routing\Exception\MissingControllerException] Controller class SendComment could not be found.
+Exception Attributes: array (
+  'class' => 'SendComment',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /sendComment
+Referer URL: http://localhost/ercomunicaciones/clientes/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2019-05-03 22:13:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class SendComment could not be found.
+Exception Attributes: array (
+  'class' => 'SendComment',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /sendComment
+Referer URL: http://localhost/ercomunicaciones/clientes/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2019-05-03 22:16:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class SendComment could not be found.
+Exception Attributes: array (
+  'class' => 'SendComment',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /sendComment
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2019-05-03 22:18:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class SendComment() could not be found.
+Exception Attributes: array (
+  'class' => 'SendComment()',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /sendComment()
+Referer URL: http://localhost/ercomunicaciones/clientes/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2019-05-03 22:27:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class SendComment could not be found.
+Exception Attributes: array (
+  'class' => 'SendComment',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /sendComment
+Referer URL: http://localhost/ercomunicaciones/clientes/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2019-05-03 22:29:46 Error: [Error] Class 'App\Controller\Email' not found in C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php on line 89
+Request URL: /clientes/send-comment
+Referer URL: http://localhost/ercomunicaciones/clientes/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClientesController->sendComment()
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2019-05-03 22:30:32 Warning: Headers already sent in C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Debugger.php:850
+2019-05-03 22:30:32 Error: [Error] Call to a member function patchEntity() on boolean in C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php on line 112
+Request URL: /clientes/send-comment
+Referer URL: http://localhost/ercomunicaciones/clientes/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClientesController->sendComment()
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2019-05-03 22:32:27 Error: [Cake\View\Exception\MissingTemplateException] Template file "Email\html\welcome.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Email\\html\\welcome.ctp',
+)
+Request URL: /clientes/send-comment
+Referer URL: http://localhost/ercomunicaciones/clientes/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\View\View.php(749): Cake\View\View->_getViewFileName('Email\\html\\welc...')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Email.php(2632): Cake\View\View->render()
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Email.php(2498): Cake\Mailer\Email->_renderTemplates('')
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Email.php(2050): Cake\Mailer\Email->_render('')
+#4 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(112): Cake\Mailer\Email->send()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClientesController->sendComment()
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+
+
+2019-05-03 22:33:19 Error: [Cake\View\Exception\MissingTemplateException] Template file "Email\html\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Email\\html\\index.ctp',
+)
+Request URL: /clientes/send-comment
+Referer URL: http://localhost/ercomunicaciones/clientes/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\View\View.php(749): Cake\View\View->_getViewFileName('Email\\html\\inde...')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Email.php(2632): Cake\View\View->render()
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Email.php(2498): Cake\Mailer\Email->_renderTemplates('')
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Email.php(2050): Cake\Mailer\Email->_render('')
+#4 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(112): Cake\Mailer\Email->send()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClientesController->sendComment()
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+
+
+2019-05-03 22:34:52 Error: [Cake\Network\Exception\SocketException] SMTP server did not accept the password.
+Request URL: /clientes/send-comment
+Referer URL: http://localhost/ercomunicaciones/clientes/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(163): Cake\Mailer\Transport\SmtpTransport->_auth()
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Email.php(2058): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#2 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(111): Cake\Mailer\Email->send()
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClientesController->sendComment()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2019-05-03 22:36:50 Error: [Cake\Network\Exception\SocketException] SMTP server did not accept the password.
+Request URL: /clientes/send-comment
+Referer URL: http://localhost/ercomunicaciones/clientes/view/2
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(163): Cake\Mailer\Transport\SmtpTransport->_auth()
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Email.php(2058): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#2 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(111): Cake\Mailer\Email->send()
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClientesController->sendComment()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2019-05-03 22:37:39 Error: [Cake\Network\Exception\SocketException] SMTP server did not accept the password.
+Request URL: /clientes/send-comment
+Referer URL: http://localhost/ercomunicaciones/clientes/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(163): Cake\Mailer\Transport\SmtpTransport->_auth()
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Email.php(2058): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#2 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(111): Cake\Mailer\Email->send()
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClientesController->sendComment()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2019-05-03 22:42:22 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "clientes" with primary key [NULL]
+Request URL: /clientes/send-comment
+Referer URL: http://localhost/ercomunicaciones/clientes/view/4
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(29): Cake\ORM\Table->get(Array, Array)
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(586): App\Controller\ClientesController->view()
+#2 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(118): Cake\Controller\Controller->setAction('view')
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClientesController->sendComment()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2019-05-03 22:42:22 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Debugger.php line=850 in [C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /clientes/send-comment
+Referer URL: http://localhost/ercomunicaciones/clientes/view/4
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-05-03 22:42:22 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /clientes/send-comment
+Referer URL: http://localhost/ercomunicaciones/clientes/view/4
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-05-03 22:42:22 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /clientes/send-comment
+Referer URL: http://localhost/ercomunicaciones/clientes/view/4
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-05-03 22:44:14 Error: [Cake\View\Exception\MissingTemplateException] Template file "Clientes\send_comment.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Clientes\\send_comment.ctp',
+)
+Request URL: /clientes/send-comment
+Referer URL: http://localhost/ercomunicaciones/clientes/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\View\View.php(749): Cake\View\View->_getViewFileName('Clientes\\send_c...')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(624): Cake\View\View->render(NULL, NULL)
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2019-05-03 22:50:25 Error: [Cake\View\Exception\MissingTemplateException] Template file "Email\html\welcome.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Email\\html\\welcome.ctp',
+)
+Request URL: /clientes/send-mail
+Referer URL: http://localhost/ercomunicaciones/clientes/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\View\View.php(749): Cake\View\View->_getViewFileName('Email\\html\\welc...')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Email.php(2632): Cake\View\View->render()
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Email.php(2498): Cake\Mailer\Email->_renderTemplates('')
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Email.php(2050): Cake\Mailer\Email->_render('')
+#4 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(113): Cake\Mailer\Email->send()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClientesController->sendMail()
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+
+
+2019-05-03 22:50:52 Error: [Cake\View\Exception\MissingTemplateException] Template file "Email\html\view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Email\\html\\view.ctp',
+)
+Request URL: /clientes/send-mail
+Referer URL: http://localhost/ercomunicaciones/clientes/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\View\View.php(749): Cake\View\View->_getViewFileName('Email\\html\\view')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Email.php(2632): Cake\View\View->render()
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Email.php(2498): Cake\Mailer\Email->_renderTemplates('')
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Email.php(2050): Cake\Mailer\Email->_render('')
+#4 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(113): Cake\Mailer\Email->send()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClientesController->sendMail()
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+
+
+2019-05-03 22:52:30 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "clientes" with primary key [NULL]
+Request URL: /clientes/send-mail
+Referer URL: http://localhost/ercomunicaciones/clientes/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(91): Cake\ORM\Table->get(Array, Array)
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClientesController->sendMail()
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2019-05-03 22:55:25 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "clientes" with primary key [NULL]
+Request URL: /clientes/send-mail
+Referer URL: http://localhost/ercomunicaciones/clientes/view/2
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(91): Cake\ORM\Table->get(Array, Array)
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClientesController->sendMail()
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2019-05-03 22:55:51 Error: [Cake\View\Exception\MissingTemplateException] Template file "Email\html\email.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Email\\html\\email.ctp',
+)
+Request URL: /clientes/send-mail
+Referer URL: http://localhost/ercomunicaciones/clientes/view/4
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\View\View.php(749): Cake\View\View->_getViewFileName('Email\\html\\emai...')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Email.php(2632): Cake\View\View->render()
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Email.php(2498): Cake\Mailer\Email->_renderTemplates('')
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Email.php(2050): Cake\Mailer\Email->_render('')
+#4 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(113): Cake\Mailer\Email->send()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClientesController->sendMail()
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+
+
+2019-05-03 23:01:12 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "clientes" with primary key [NULL]
+Request URL: /clientes/send-mail
+Referer URL: http://localhost/ercomunicaciones/clientes/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(29): Cake\ORM\Table->get(Array, Array)
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(586): App\Controller\ClientesController->view()
+#2 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(122): Cake\Controller\Controller->setAction('view')
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClientesController->sendMail()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2019-05-03 23:12:41 Error: [Cake\Network\Exception\SocketException] SMTP server did not accept the password.
+Request URL: /clientes/send-mail
+Referer URL: http://localhost/ercomunicaciones/clientes/view/2
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(163): Cake\Mailer\Transport\SmtpTransport->_auth()
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Email.php(2058): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#2 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(110): Cake\Mailer\Email->send()
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClientesController->sendMail()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2019-05-03 23:17:45 Error: [Cake\View\Exception\MissingTemplateException] Template file "Clientes\send_mail.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Clientes\\send_mail.ctp',
+)
+Request URL: /clientes/send-mail
+Referer URL: http://localhost/ercomunicaciones/clientes/view/3
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\View\View.php(749): Cake\View\View->_getViewFileName('Clientes\\send_m...')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(624): Cake\View\View->render(NULL, NULL)
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2019-05-03 23:18:37 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "clientes" with primary key [NULL]
+Request URL: /clientes/send-mail
+Referer URL: http://localhost/ercomunicaciones/clientes/view/3
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(29): Cake\ORM\Table->get(Array, Array)
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(586): App\Controller\ClientesController->view()
+#2 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(116): Cake\Controller\Controller->setAction('view')
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClientesController->sendMail()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2019-05-03 23:19:17 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "clientes" with primary key [NULL]
+Request URL: /clientes/send-mail
+Referer URL: http://localhost/ercomunicaciones/clientes/view/3
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(29): Cake\ORM\Table->get(Array, Array)
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(586): App\Controller\ClientesController->view()
+#2 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(116): Cake\Controller\Controller->setAction('view')
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClientesController->sendMail()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2019-05-03 23:23:08 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "clientes" with primary key [NULL]
+Request URL: /clientes/view
+Referer URL: http://localhost/ercomunicaciones/clientes/view/3
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(29): Cake\ORM\Table->get(Array, Array)
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClientesController->view()
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2019-05-03 23:24:35 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Debugger.php line=850 in [C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /clientes/send-mail
+Referer URL: http://localhost/ercomunicaciones/clientes/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-05-03 23:24:35 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /clientes/send-mail
+Referer URL: http://localhost/ercomunicaciones/clientes/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-05-03 23:24:35 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /clientes/send-mail
+Referer URL: http://localhost/ercomunicaciones/clientes/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-05-03 23:24:35 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /clientes/send-mail
+Referer URL: http://localhost/ercomunicaciones/clientes/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-05-03 23:30:07 Error: [Error] Call to a member function get() on boolean in C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php on line 90
+Request URL: /clientes/send-mail
+Referer URL: http://localhost/ercomunicaciones/clientes/view/3
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClientesController->sendMail()
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2019-05-03 23:33:23 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "clientes" with primary key [NULL]
+Request URL: /clientes/send-mail
+Referer URL: http://localhost/ercomunicaciones/clientes/view/2
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(90): Cake\ORM\Table->get(Array)
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClientesController->sendMail()
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2019-05-03 23:35:03 Error: [Cake\Network\Exception\SocketException] SMTP server did not accept the password.
+Request URL: /clientes/send-mail
+Referer URL: http://localhost/ercomunicaciones/clientes/view/4
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(163): Cake\Mailer\Transport\SmtpTransport->_auth()
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Email.php(2058): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#2 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(110): Cake\Mailer\Email->send()
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClientesController->sendMail()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2019-05-03 23:35:52 Error: [Cake\Network\Exception\SocketException] SMTP server did not accept the password.
+Request URL: /clientes/send-mail
+Referer URL: http://localhost/ercomunicaciones/clientes/view/4
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(163): Cake\Mailer\Transport\SmtpTransport->_auth()
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Email.php(2058): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#2 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(110): Cake\Mailer\Email->send()
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClientesController->sendMail()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2019-05-03 23:40:48 Error: [Cake\Network\Exception\SocketException] SMTP server did not accept the password.
+Request URL: /clientes/send-mail
+Referer URL: http://localhost/ercomunicaciones/clientes/view/6
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(163): Cake\Mailer\Transport\SmtpTransport->_auth()
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Email.php(2058): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#2 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(110): Cake\Mailer\Email->send()
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClientesController->sendMail()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2019-05-03 23:41:20 Error: [Cake\Network\Exception\SocketException] SMTP server did not accept the password.
+Request URL: /clientes/send-mail
+Referer URL: http://localhost/ercomunicaciones/clientes/view/4
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(163): Cake\Mailer\Transport\SmtpTransport->_auth()
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Email.php(2058): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#2 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(110): Cake\Mailer\Email->send()
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClientesController->sendMail()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2019-05-03 23:44:19 Error: [Cake\Network\Exception\SocketException] SMTP server did not accept the password.
+Request URL: /clientes/send-mail
+Referer URL: http://localhost/ercomunicaciones/clientes/view/2
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(163): Cake\Mailer\Transport\SmtpTransport->_auth()
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Email.php(2058): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#2 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(110): Cake\Mailer\Email->send()
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClientesController->sendMail()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2019-05-04 00:13:24 Error: [Cake\Network\Exception\SocketException] SMTP Error: 530 5.5.1  https://support.google.com/mail/?p=WantAuthError x16sm922142vsc.23 - gsmtp
+Request URL: /clientes/send-mail
+Referer URL: http://localhost/ercomunicaciones/clientes/view/2
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(365): Cake\Mailer\Transport\SmtpTransport->_smtpSend('MAIL FROM:<admi...')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(168): Cake\Mailer\Transport\SmtpTransport->_sendRcpt(Object(Cake\Mailer\Email))
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Email.php(2058): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#3 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(109): Cake\Mailer\Email->send()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClientesController->sendMail()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#18 {main}
+
+
+2019-05-04 00:20:15 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "clientes" with primary key [NULL]
+Request URL: /clientes/send-mail
+Referer URL: http://localhost/ercomunicaciones/clientes/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(90): Cake\ORM\Table->get(Array)
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClientesController->sendMail()
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2019-05-04 00:28:05 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Debugger.php line=850 in [C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /clientes/send-mail
+Referer URL: http://localhost/ercomunicaciones/clientes/view/2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-05-04 00:28:05 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /clientes/send-mail
+Referer URL: http://localhost/ercomunicaciones/clientes/view/2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-05-04 00:28:05 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /clientes/send-mail
+Referer URL: http://localhost/ercomunicaciones/clientes/view/2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-05-04 00:28:05 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Debugger.php:850) in [C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /clientes/send-mail
+Referer URL: http://localhost/ercomunicaciones/clientes/view/2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 106
+[main] - ROOT\webroot\index.php, line 40
+
+
+
