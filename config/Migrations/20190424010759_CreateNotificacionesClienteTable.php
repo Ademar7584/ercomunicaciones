@@ -12,7 +12,7 @@ class CreateNotificacionesClienteTable extends AbstractMigration
      */
     public function change()
     {
-        $table = $this->table('notificacionescliente');
+        $table = $this->table('notificaciones_cliente');
         $table->AddColumn('nombre', 'string', array('limit'=> 100))
             ->AddColumn('cliente_id', 'integer')
             ->AddColumn('promocione_id', 'integer')

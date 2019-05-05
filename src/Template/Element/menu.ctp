@@ -47,6 +47,30 @@
           <?= $this->html->link('Crear Actividad', ['controller' => 'Actividades', 'action' => 'add'], ['class' => 'dropdown-item']) ?>
         </div>
       </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">Ventas</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown03">
+          <?= $this->html->link('Lista de ventas', ['controller' => 'VentasProducto', 'action' => 'index'], ['class' => 'dropdown-item']) ?>
+          <?= $this->html->link('Crear venta', ['controller' => 'VentasProducto', 'action' => 'add'], ['class' => 'dropdown-item']) ?>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">Actividades del Usuario</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown03">
+          <?= $this->html->link('Lista de Actividades del Usuario', ['controller' => 'ActividadesUsuario', 'action' => 'index'], ['class' => 'dropdown-item']) ?>
+          <?= $this->html->link('Crear Actividad del Usuario', ['controller' => 'ActividadesUsuario', 'action' => 'add'], ['class' => 'dropdown-item']) ?>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">Notificaciones</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown03">
+          <?= $this->html->link('Lista de Notificaciones del Cliente', ['controller' => 'NotificacionesCliente', 'action' => 'index'], ['class' => 'dropdown-item']) ?>
+          <?= $this->html->link('Crear Notificaciones del Cliente', ['controller' => 'NotificacionesCliente', 'action' => 'add'], ['class' => 'dropdown-item']) ?>
+        </div>
+      </li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li class="nav-item dropdown">

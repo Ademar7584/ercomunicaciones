@@ -1,22 +1,22 @@
 <?php
 namespace App\Test\TestCase\Model\Table;
 
-use App\Model\Table\ActividadesUsuarioTable;
+use App\Model\Table\NotificacionesClienteTable;
 use Cake\ORM\TableRegistry;
 use Cake\TestSuite\TestCase;
 
 /**
- * App\Model\Table\ActividadesUsuarioTable Test Case
+ * App\Model\Table\NotificacionesClienteTable Test Case
  */
-class ActividadesUsuarioTableTest extends TestCase
+class NotificacionesClienteTableTest extends TestCase
 {
 
     /**
      * Test subject
      *
-     * @var \App\Model\Table\ActividadesUsuarioTable
+     * @var \App\Model\Table\NotificacionesClienteTable
      */
-    public $ActividadesUsuario;
+    public $NotificacionesCliente;
 
     /**
      * Fixtures
@@ -24,9 +24,15 @@ class ActividadesUsuarioTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
-        'app.actividades_usuario',
-        'app.users',
-        'app.actividades'
+        'app.notificaciones_cliente',
+        'app.clientes',
+        'app.personas',
+        'app.notificacionescliente',
+        'app.promociones',
+        'app.promocionesproducto',
+        'app.ventasproducto',
+        'app.productos',
+        'app.categorias'
     ];
 
     /**
@@ -37,8 +43,8 @@ class ActividadesUsuarioTableTest extends TestCase
     public function setUp()
     {
         parent::setUp();
-        $config = TableRegistry::exists('ActividadesUsuario') ? [] : ['className' => ActividadesUsuarioTable::class];
-        $this->ActividadesUsuario = TableRegistry::get('ActividadesUsuario', $config);
+        $config = TableRegistry::exists('NotificacionesCliente') ? [] : ['className' => NotificacionesClienteTable::class];
+        $this->NotificacionesCliente = TableRegistry::get('NotificacionesCliente', $config);
     }
 
     /**
@@ -48,7 +54,7 @@ class ActividadesUsuarioTableTest extends TestCase
      */
     public function tearDown()
     {
-        unset($this->ActividadesUsuario);
+        unset($this->NotificacionesCliente);
 
         parent::tearDown();
     }

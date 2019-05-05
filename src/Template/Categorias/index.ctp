@@ -5,8 +5,8 @@
       <div class="table-responsive">
         <table id="mytable" class="table table-bordered table-striped">
           <thead>
-            <th><?= $this->Paginator->sort('Nombre') ?></th>
-            <th><?= $this->Paginator->sort('Tipo') ?></th>
+            <th scope="col"><?= $this->Paginator->sort('Nombre') ?></th>
+            <th scope="col"><?= $this->Paginator->sort('Tipo') ?></th>
             <th scope="col" class="actions"><?= __('Acciones') ?></th>
           </thead>
           <tbody>

@@ -7,22 +7,22 @@ use Cake\ORM\Table;
 use Cake\Validation\Validator;
 
 /**
- * ActividadesUsuario Model
+ * NotificacionesCliente Model
  *
- * @property \App\Model\Table\UsersTable|\Cake\ORM\Association\BelongsTo $Users
- * @property \App\Model\Table\ActividadesTable|\Cake\ORM\Association\BelongsTo $Actividades
+ * @property \App\Model\Table\ClientesTable|\Cake\ORM\Association\BelongsTo $Clientes
+ * @property \App\Model\Table\PromocionesTable|\Cake\ORM\Association\BelongsTo $Promociones
  *
- * @method \App\Model\Entity\ActividadesUsuario get($primaryKey, $options = [])
- * @method \App\Model\Entity\ActividadesUsuario newEntity($data = null, array $options = [])
- * @method \App\Model\Entity\ActividadesUsuario[] newEntities(array $data, array $options = [])
- * @method \App\Model\Entity\ActividadesUsuario|bool save(\Cake\Datasource\EntityInterface $entity, $options = [])
- * @method \App\Model\Entity\ActividadesUsuario patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
- * @method \App\Model\Entity\ActividadesUsuario[] patchEntities($entities, array $data, array $options = [])
- * @method \App\Model\Entity\ActividadesUsuario findOrCreate($search, callable $callback = null, $options = [])
+ * @method \App\Model\Entity\NotificacionesCliente get($primaryKey, $options = [])
+ * @method \App\Model\Entity\NotificacionesCliente newEntity($data = null, array $options = [])
+ * @method \App\Model\Entity\NotificacionesCliente[] newEntities(array $data, array $options = [])
+ * @method \App\Model\Entity\NotificacionesCliente|bool save(\Cake\Datasource\EntityInterface $entity, $options = [])
+ * @method \App\Model\Entity\NotificacionesCliente patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
+ * @method \App\Model\Entity\NotificacionesCliente[] patchEntities($entities, array $data, array $options = [])
+ * @method \App\Model\Entity\NotificacionesCliente findOrCreate($search, callable $callback = null, $options = [])
  *
  * @mixin \Cake\ORM\Behavior\TimestampBehavior
  */
-class ActividadesUsuarioTable extends Table
+class NotificacionesClienteTable extends Table
 {
 
     /**
@@ -35,18 +35,18 @@ class ActividadesUsuarioTable extends Table
     {
         parent::initialize($config);
 
-        $this->setTable('actividades_usuario');
+        $this->setTable('notificaciones_cliente');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
 
-        $this->belongsTo('Users', [
-            'foreignKey' => 'user_id',
+        $this->belongsTo('Clientes', [
+            'foreignKey' => 'cliente_id',
             'joinType' => 'INNER'
         ]);
-        $this->belongsTo('Actividades', [
-            'foreignKey' => 'actividade_id',
+        $this->belongsTo('Promociones', [
+            'foreignKey' => 'promocione_id',
             'joinType' => 'INNER'
         ]);
     }
@@ -79,8 +79,8 @@ class ActividadesUsuarioTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['user_id'], 'Users'));
-        $rules->add($rules->existsIn(['actividade_id'], 'Actividades'));
+        $rules->add($rules->existsIn(['cliente_id'], 'Clientes'));
+        $rules->add($rules->existsIn(['promocione_id'], 'Promociones'));
 
         return $rules;
     }

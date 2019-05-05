@@ -4,19 +4,19 @@ namespace App\Model\Entity;
 use Cake\ORM\Entity;
 
 /**
- * ActividadesUsuario Entity
+ * NotificacionesCliente Entity
  *
  * @property int $id
  * @property string $nombre
- * @property int $user_id
- * @property int $actividade_id
+ * @property int $cliente_id
+ * @property int $promocione_id
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
  *
- * @property \App\Model\Entity\User $user
- * @property \App\Model\Entity\Actividade $actividade
+ * @property \App\Model\Entity\Cliente $cliente
+ * @property \App\Model\Entity\Promocione $promocione
  */
-class ActividadesUsuario extends Entity
+class NotificacionesCliente extends Entity
 {
 
     /**
