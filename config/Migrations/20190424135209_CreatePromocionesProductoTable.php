@@ -12,7 +12,7 @@ class CreatePromocionesProductoTable extends AbstractMigration
      */
     public function change()
     {
-        $table = $this->table('promocionesproducto');
+        $table = $this->table('promociones_producto');
         $table->AddColumn('nombre', 'string', array('limit' => 100))
             ->AddColumn('producto_id', 'integer', array('limit' => 11))
             ->AddColumn('promocione_id', 'integer', array('limit' => 11))

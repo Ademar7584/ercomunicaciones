@@ -12,7 +12,7 @@ class CreateVentasProductoTable extends AbstractMigration
      */
     public function change()
     {
-        $table = $this->table('ventasproducto');
+        $table = $this->table('ventas_producto');
         $table->AddColumn('nombre', 'string', array('limit' => 100))
             ->AddColumn('cliente_id', 'integer', array('limit' => 11))
             ->AddColumn('producto_id', 'integer', array('limit' => 11))

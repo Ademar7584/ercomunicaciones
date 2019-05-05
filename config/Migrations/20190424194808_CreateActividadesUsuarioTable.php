@@ -12,10 +12,10 @@ class CreateActividadesUsuarioTable extends AbstractMigration
      */
     public function change()
     {
-        $table = $this->table('actividadesusuario');
+        $table = $this->table('actividades_usuario');
         $table->AddColumn('nombre', 'string', array('limit' => 100))
-            ->AddColumn('usuario_id', 'integer')
-            ->AddColumn('actividad_id', 'integer')
+            ->AddColumn('user_id', 'integer')
+            ->AddColumn('actividade_id', 'integer')
             ->AddColumn('created', 'datetime')
             ->AddColumn('modified', 'datetime')
             ->create();

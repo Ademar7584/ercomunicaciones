@@ -893,3 +893,72 @@ Stack Trace:
 #2 {main}
 
 
+2019-05-04 22:12:14 Error: [RuntimeException] Unknown command `cake all`. Run `cake --help` to get the list of valid commands. in C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php on line 173
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(136): Cake\Console\CommandRunner->getShell(Object(Cake\Console\ConsoleIo), Object(Cake\Console\CommandCollection), 'all')
+#1 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2019-05-04 22:12:23 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ercomunicaciones.ventas_producto' doesn't exist in C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'ventas_producto', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('ventas_producto', Array)
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Table.php(532): Cake\Database\Schema\CachedCollection->describe('ventas_producto')
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Table.php(653): Cake\ORM\Table->getSchema()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(217): Cake\ORM\Table->getPrimaryKey()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'ventas_producto', 'VentasProducto')
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('VentasProducto')
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\bake\src\Shell\BakeShell.php(257): Bake\Shell\Task\ModelTask->main('VentasProducto')
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('VentasProducto', 0)
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\bake\src\Shell\BakeShell.php(258): Cake\Collection\Collection->each(Object(Closure))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(492): Bake\Shell\BakeShell->all('VentasProducto')
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Cake\Console\Shell->runCommand(Array, true)
+#13 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#14 {main}
+
+
+2019-05-04 22:13:44 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ercomunicaciones.ventas_producto' doesn't exist in C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'ventas_producto', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('ventas_producto', Array)
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Table.php(532): Cake\Database\Schema\CachedCollection->describe('ventas_producto')
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Table.php(653): Cake\ORM\Table->getSchema()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(217): Cake\ORM\Table->getPrimaryKey()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'ventas_producto', 'VentasProducto')
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('VentasProducto')
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\bake\src\Shell\BakeShell.php(257): Bake\Shell\Task\ModelTask->main('VentasProducto')
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('VentasProducto', 0)
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\bake\src\Shell\BakeShell.php(258): Cake\Collection\Collection->each(Object(Closure))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(492): Bake\Shell\BakeShell->all('VentasProducto')
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Cake\Console\Shell->runCommand(Array, true)
+#13 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#14 {main}
+
+
+2019-05-04 22:13:58 Error: [RuntimeException] Unknown command `cake cake`. Run `cake --help` to get the list of valid commands. in C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php on line 173
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(136): Cake\Console\CommandRunner->getShell(Object(Cake\Console\ConsoleIo), Object(Cake\Console\CommandCollection), 'cake')
+#1 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2019-05-04 22:14:16 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ercomunicaciones.ventas_producto' doesn't exist in C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'ventas_producto', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('ventas_producto', Array)
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Table.php(532): Cake\Database\Schema\CachedCollection->describe('ventas_producto')
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Table.php(653): Cake\ORM\Table->getSchema()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(217): Cake\ORM\Table->getPrimaryKey()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'ventas_producto', 'VentasProducto')
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('VentasProducto')
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(506): Bake\Shell\Task\ModelTask->main('VentasProducto')
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(499): Cake\Console\Shell->runCommand(Array, false, Array)
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Cake\Console\Shell->runCommand(Array, true)
+#11 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#12 {main}
+
+

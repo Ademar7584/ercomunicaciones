@@ -18242,3 +18242,889 @@ Stack Trace:
 #18 {main}
 
 
+2019-05-04 15:30:23 Error: [Cake\Network\Exception\SocketException] SMTP Error: 530 5.5.1  https://support.google.com/mail/?p=WantAuthError d9sm894150uab.20 - gsmtp
+Request URL: /clientes/send-mail
+Referer URL: http://localhost/ercomunicaciones/clientes/view/2
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(365): Cake\Mailer\Transport\SmtpTransport->_smtpSend('MAIL FROM:<you@...')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(168): Cake\Mailer\Transport\SmtpTransport->_sendRcpt(Object(Cake\Mailer\Email))
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Email.php(2058): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#3 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(110): Cake\Mailer\Email->send()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClientesController->sendMail()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#18 {main}
+
+
+2019-05-04 15:37:24 Error: [Cake\Network\Exception\SocketException] SMTP Error: 530 5.5.1  https://support.google.com/mail/?p=WantAuthError c2sm5020299vsc.32 - gsmtp
+Request URL: /clientes/send-mail
+Referer URL: http://localhost/ercomunicaciones/clientes/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(365): Cake\Mailer\Transport\SmtpTransport->_smtpSend('MAIL FROM:<you@...')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(168): Cake\Mailer\Transport\SmtpTransport->_sendRcpt(Object(Cake\Mailer\Email))
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Mailer\Email.php(2058): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#3 C:\xampp\htdocs\ercomunicaciones\src\Controller\ClientesController.php(110): Cake\Mailer\Email->send()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClientesController->sendMail()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#18 {main}
+
+
+2019-05-04 15:39:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/index.css
+Referer URL: http://localhost/ercomunicaciones/users
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2019-05-04 15:40:34 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2019-05-04 15:41:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Files could not be found.
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /files/users/image/89ffcee1-7ce0-419a-b989-78a696038a03square_/Black_Rock_Shooter_anime_girls_anime_dark-68188.jpg%21d.jpg
+Referer URL: http://localhost/ercomunicaciones/users/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2019-05-04 15:41:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2019-05-04 15:41:50 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2019-05-04 22:22:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Ventas_producto could not be found.
+Exception Attributes: array (
+  'class' => 'Ventas_producto',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /ventas_producto
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2019-05-04 22:22:35 Error: [RuntimeException] Unable to locate an object compatible with paginate.
+Request URL: /ventasproducto
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\src\Controller\VentasProductoController.php(22): Cake\Controller\Controller->paginate(false)
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\VentasProductoController->index()
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasProductoController))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2019-05-04 22:22:41 Error: [RuntimeException] Unable to locate an object compatible with paginate.
+Request URL: /Ventasproducto
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\src\Controller\VentasProductoController.php(22): Cake\Controller\Controller->paginate(false)
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\VentasProductoController->index()
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasProductoController))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2019-05-04 22:22:46 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Ventas_producto could not be found.
+Exception Attributes: array (
+  'class' => 'Ventas_producto',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /ventas_producto
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2019-05-04 22:38:26 Warning: Headers already sent in C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Debugger.php:850
+2019-05-04 22:38:26 Error: [Error] Call to a member function find() on null in C:\xampp\htdocs\ercomunicaciones\src\Controller\VentasProductoController.php on line 62
+Request URL: /ventas-producto/add
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\VentasProductoController->add()
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasProductoController))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2019-05-04 22:39:01 Warning: Headers already sent in C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Debugger.php:850
+2019-05-04 22:39:01 Error: [Error] Call to a member function find() on null in C:\xampp\htdocs\ercomunicaciones\src\Controller\VentasProductoController.php on line 62
+Request URL: /ventas-producto/add
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\VentasProductoController->add()
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasProductoController))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2019-05-04 22:40:57 Warning: Headers already sent in C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Debugger.php:850
+2019-05-04 22:40:57 Error: [Error] Call to a member function find() on null in C:\xampp\htdocs\ercomunicaciones\src\Controller\VentasProductoController.php on line 65
+Request URL: /ventas-producto/add
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\VentasProductoController->add()
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasProductoController))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2019-05-04 22:41:16 Warning: Headers already sent in C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Debugger.php:850
+2019-05-04 22:41:16 Error: [Error] Call to a member function find() on null in C:\xampp\htdocs\ercomunicaciones\src\Controller\VentasProductoController.php on line 65
+Request URL: /ventas-producto/add
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\VentasProductoController->add()
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasProductoController))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2019-05-04 22:41:39 Error: [RuntimeException] Table "App\Model\Table\VentasProductoTable" is not associated with "Categorias"
+Request URL: /ventas-producto/add
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\src\Controller\VentasProductoController.php(65): Cake\ORM\Table->__get('Categorias')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\VentasProductoController->add()
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\VentasProductoController))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2019-05-04 23:36:08 Error: [RuntimeException] Table "App\Model\Table\ActividadesUsuarioTable" is not associated with "Users"
+Request URL: /actividades-usuario/add
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\src\Controller\ActividadesUsuarioController.php(42): Cake\ORM\Table->__get('Users')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ActividadesUsuarioController->add()
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ActividadesUsuarioController))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2019-05-04 23:37:21 Error: [RuntimeException] Table "App\Model\Table\ActividadesUsuarioTable" is not associated with "Actividades"
+Request URL: /actividades-usuario/add
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\src\Controller\ActividadesUsuarioController.php(43): Cake\ORM\Table->__get('Actividades')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ActividadesUsuarioController->add()
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ActividadesUsuarioController))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2019-05-04 23:48:00 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Actividades_usuario could not be found.
+Exception Attributes: array (
+  'class' => 'Actividades_usuario',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /actividades_usuario
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2019-05-04 23:48:10 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ercomunicaciones.actividads' doesn't exist
+Request URL: /actividadesUsuario
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'actividads', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('actividads', Array)
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Table.php(532): Cake\Database\Schema\CachedCollection->describe('actividads')
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Table.php(653): Cake\ORM\Table->getSchema()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Query.php(440): Cake\ORM\Table->getPrimaryKey()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Query.php(404): Cake\ORM\Query->_addAssociationsToTypeMap(Object(App\Model\Table\ActividadesUsuarioTable), Object(Cake\Database\TypeMap), Array)
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Query.php(756): Cake\ORM\Query->contain(Array)
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Table.php(2203): Cake\ORM\Query->applyOptions(Array)
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Table.php(1181): Cake\ORM\Table->callFinder('all', Object(Cake\ORM\Query), Array)
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Datasource\Paginator.php(180): Cake\ORM\Table->find('all', Array)
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(201): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\ActividadesUsuarioTable), Array, Array)
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(718): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ActividadesUsuarioTable), Array)
+#12 C:\xampp\htdocs\ercomunicaciones\src\Controller\ActividadesUsuarioController.php(26): Cake\Controller\Controller->paginate(Object(App\Model\Table\ActividadesUsuarioTable))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ActividadesUsuarioController->index()
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ActividadesUsuarioController))
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#27 {main}
+
+
+2019-05-04 23:48:23 Error: [Cake\Routing\Exception\MissingControllerException] Controller class VentaProductos could not be found.
+Exception Attributes: array (
+  'class' => 'VentaProductos',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /ventaProductos
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2019-05-04 23:48:50 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ercomunicaciones.actividads' doesn't exist
+Request URL: /actividadesUsuario
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'actividads', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('actividads', Array)
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Table.php(532): Cake\Database\Schema\CachedCollection->describe('actividads')
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Table.php(653): Cake\ORM\Table->getSchema()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Query.php(440): Cake\ORM\Table->getPrimaryKey()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Query.php(404): Cake\ORM\Query->_addAssociationsToTypeMap(Object(App\Model\Table\ActividadesUsuarioTable), Object(Cake\Database\TypeMap), Array)
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Query.php(756): Cake\ORM\Query->contain(Array)
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Table.php(2203): Cake\ORM\Query->applyOptions(Array)
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Table.php(1181): Cake\ORM\Table->callFinder('all', Object(Cake\ORM\Query), Array)
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Datasource\Paginator.php(180): Cake\ORM\Table->find('all', Array)
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(201): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\ActividadesUsuarioTable), Array, Array)
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(718): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ActividadesUsuarioTable), Array)
+#12 C:\xampp\htdocs\ercomunicaciones\src\Controller\ActividadesUsuarioController.php(26): Cake\Controller\Controller->paginate(Object(App\Model\Table\ActividadesUsuarioTable))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ActividadesUsuarioController->index()
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ActividadesUsuarioController))
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#27 {main}
+
+
+2019-05-04 23:49:35 Error: [InvalidArgumentException] ActividadesUsuario is not associated with Actividads
+Request URL: /actividadesUsuario
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(336): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\ActividadesUsuarioTable), 'Actividads', Array, Array)
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(466): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\ActividadesUsuarioTable))
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(437): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\ActividadesUsuarioTable))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Query.php(1064): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\ActividadesUsuarioTable), true)
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Query.php(1016): Cake\ORM\Query->_transformQuery()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(136): Cake\ORM\Query->sql()
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Connection.php(246): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Connection.php(299): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Query.php(1037): Cake\Database\Query->execute()
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(287): Cake\ORM\Query->_execute()
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Query.php(986): Cake\ORM\Query->_all()
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Datasource\Paginator.php(186): Cake\ORM\Query->all()
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(201): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\ActividadesUsuarioTable), Array, Array)
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(718): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ActividadesUsuarioTable), Array)
+#15 C:\xampp\htdocs\ercomunicaciones\src\Controller\ActividadesUsuarioController.php(26): Cake\Controller\Controller->paginate(Object(App\Model\Table\ActividadesUsuarioTable))
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ActividadesUsuarioController->index()
+#17 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#18 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ActividadesUsuarioController))
+#19 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#25 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#27 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#30 {main}
+
+
+2019-05-04 23:49:56 Error: [InvalidArgumentException] ActividadesUsuario is not associated with Actividads
+Request URL: /actividadesUsuario
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(336): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\ActividadesUsuarioTable), 'Actividads', Array, Array)
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(466): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\ActividadesUsuarioTable))
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(437): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\ActividadesUsuarioTable))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Query.php(1064): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\ActividadesUsuarioTable), true)
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Query.php(1016): Cake\ORM\Query->_transformQuery()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(136): Cake\ORM\Query->sql()
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Connection.php(246): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Connection.php(299): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Query.php(1037): Cake\Database\Query->execute()
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(287): Cake\ORM\Query->_execute()
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Query.php(986): Cake\ORM\Query->_all()
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Datasource\Paginator.php(186): Cake\ORM\Query->all()
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(201): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\ActividadesUsuarioTable), Array, Array)
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(718): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ActividadesUsuarioTable), Array)
+#15 C:\xampp\htdocs\ercomunicaciones\src\Controller\ActividadesUsuarioController.php(26): Cake\Controller\Controller->paginate(Object(App\Model\Table\ActividadesUsuarioTable))
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ActividadesUsuarioController->index()
+#17 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#18 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ActividadesUsuarioController))
+#19 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#25 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#27 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#30 {main}
+
+
+2019-05-04 23:51:51 Error: [InvalidArgumentException] ActividadesUsuario is not associated with Actividads
+Request URL: /actividadesUsuario
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(336): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\ActividadesUsuarioTable), 'Actividads', Array, Array)
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(466): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\ActividadesUsuarioTable))
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(437): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\ActividadesUsuarioTable))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Query.php(1064): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\ActividadesUsuarioTable), true)
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Query.php(1016): Cake\ORM\Query->_transformQuery()
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(136): Cake\ORM\Query->sql()
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Connection.php(246): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Connection.php(299): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Database\Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Query.php(1037): Cake\Database\Query->execute()
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(287): Cake\ORM\Query->_execute()
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Query.php(986): Cake\ORM\Query->_all()
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Datasource\Paginator.php(186): Cake\ORM\Query->all()
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(201): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\ActividadesUsuarioTable), Array, Array)
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(718): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ActividadesUsuarioTable), Array)
+#15 C:\xampp\htdocs\ercomunicaciones\src\Controller\ActividadesUsuarioController.php(26): Cake\Controller\Controller->paginate(Object(App\Model\Table\ActividadesUsuarioTable))
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ActividadesUsuarioController->index()
+#17 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#18 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ActividadesUsuarioController))
+#19 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#25 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#27 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#30 {main}
+
+
+2019-05-04 23:54:34 Error: [RuntimeException] Table "App\Model\Table\ActividadesUsuarioTable" is not associated with "Actividads"
+Request URL: /actividades-usuario/add
+Referer URL: http://localhost/ercomunicaciones/actividadesUsuario
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\src\Controller\ActividadesUsuarioController.php(67): Cake\ORM\Table->__get('Actividads')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ActividadesUsuarioController->add()
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ActividadesUsuarioController))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2019-05-04 23:59:11 Error: [RuntimeException] Table "App\Model\Table\ActividadesUsuarioTable" is not associated with "Actividads"
+Request URL: /actividades-usuario/add
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\src\Controller\ActividadesUsuarioController.php(67): Cake\ORM\Table->__get('Actividads')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ActividadesUsuarioController->add()
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ActividadesUsuarioController))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2019-05-04 23:59:47 Error: [RuntimeException] Table "App\Model\Table\ActividadesUsuarioTable" is not associated with "Actividads"
+Request URL: /actividades-usuario/add
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\src\Controller\ActividadesUsuarioController.php(67): Cake\ORM\Table->__get('Actividads')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ActividadesUsuarioController->add()
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ActividadesUsuarioController))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2019-05-04 23:59:49 Error: [RuntimeException] Table "App\Model\Table\ActividadesUsuarioTable" is not associated with "Actividads"
+Request URL: /actividades-usuario/add
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\src\Controller\ActividadesUsuarioController.php(67): Cake\ORM\Table->__get('Actividads')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ActividadesUsuarioController->add()
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ActividadesUsuarioController))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2019-05-04 23:59:55 Error: [RuntimeException] Table "App\Model\Table\ActividadesUsuarioTable" is not associated with "Actividads"
+Request URL: /actividades-usuario/add
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\src\Controller\ActividadesUsuarioController.php(67): Cake\ORM\Table->__get('Actividads')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ActividadesUsuarioController->add()
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ActividadesUsuarioController))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2019-05-05 00:01:53 Error: [Cake\Controller\Exception\MissingActionException] Action ProductosController::ventaProducto() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'ProductosController',
+  'action' => 'ventaProducto',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /productos/ventaProducto
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ProductosController))
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2019-05-05 00:01:59 Error: [Cake\Controller\Exception\MissingActionException] Action ProductosController::ventasProducto() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'ProductosController',
+  'action' => 'ventasProducto',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /productos/ventasProducto
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ProductosController))
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2019-05-05 00:04:05 Error: [RuntimeException] Table "App\Model\Table\ActividadesUsuarioTable" is not associated with "Actividads"
+Request URL: /actividades-usuario/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\src\Controller\ActividadesUsuarioController.php(94): Cake\ORM\Table->__get('Actividads')
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ActividadesUsuarioController->edit('1')
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ActividadesUsuarioController))
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2019-05-05 00:52:18 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\ercomunicaciones\src\Template\ActividadesUsuario\index.ctp, line 73]
+Request URL: /actividades-usuario
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\ActividadesUsuario\index.ctp, line 73
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1168
+Cake\View\View::_render() - CORE\src\View\View.php, line 1129
+Cake\View\View::render() - CORE\src\View\View.php, line 753
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 624
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 103
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 92
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-05-05 00:57:08 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "actividades_usuario"
+Request URL: /actividades-usuario/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Table.php(1439): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\ercomunicaciones\src\Controller\ActividadesUsuarioController.php(24): Cake\ORM\Table->get(Array, Array)
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ActividadesUsuarioController->view('1')
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ActividadesUsuarioController))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#16 {main}
+
+
+2019-05-05 00:57:27 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "actividades_usuario"
+Request URL: /actividades-usuario/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\ORM\Table.php(1439): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\ercomunicaciones\src\Controller\ActividadesUsuarioController.php(24): Cake\ORM\Table->get(Array, Array)
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ActividadesUsuarioController->view('1')
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ActividadesUsuarioController))
+#5 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\ercomunicaciones\webroot\index.php(40): Cake\Http\Server->run()
+#16 {main}
+
+

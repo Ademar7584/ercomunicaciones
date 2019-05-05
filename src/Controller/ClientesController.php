@@ -101,7 +101,7 @@ class ClientesController extends AppController
             $correo->setTemplate('email');
             $correo->setEmailFormat('html');
             $correo->setTo($this->request->getData('email'));
-            $correo->setFrom($this->Auth->user('email'));
+            $correo->setSender($this->Auth->user('email'));
             $correo->setSubject('Correo de Notificacion');
             $correo->setViewVars([
                 'message' => $this->request->getData('message'),

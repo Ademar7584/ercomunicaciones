@@ -1,4 +1,4 @@
-<?php if(isset($current_user)): ?>
+  <?php if(isset($current_user)): ?>
 <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark">
   <?= $this->Html->link('Inicio', ['controller' => 'Users', 'action' => 'home'], ['class' => 'navbar-brand']) ?>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
