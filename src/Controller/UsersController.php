@@ -95,7 +95,7 @@ class UsersController extends AppController
             if ($this->Users->save($user)) {
                 $this->Flash->success('El usuario ha sido guardado.');
 
-                return $this->redirect(['controller' => 'Users', 'action' => 'home']);
+                return $this->redirect(['controller' => 'Users', 'action' => 'index']);
             }
             $this->Flash->error('El usuario no pudo ser guardado. trata de nuevo.');
         }
