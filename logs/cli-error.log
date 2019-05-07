@@ -962,3 +962,119 @@ Stack Trace:
 #12 {main}
 
 
+2019-05-07 01:25:01 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nombre' in 'field list' in C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 392
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(392): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\CakeAdapter.php(400): Phinx\Db\Adapter\PdoAdapter->insert(Object(Phinx\Db\Table), Array)
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(651): Migrations\CakeAdapter->insert(Object(Phinx\Db\Table), Array)
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(610): Phinx\Db\Table->saveData()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(677): Phinx\Db\Table->create()
+#5 C:\xampp\htdocs\ercomunicaciones\config\Seeds\NotificacionesClienteSeed.php(34): Phinx\Db\Table->save()
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\AbstractSeed.php(111): NotificacionesClienteSeed->run()
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\AbstractSeed.php(53): Migrations\AbstractSeed->runCall(Object(NotificacionesClienteSeed))
+#8 C:\xampp\htdocs\ercomunicaciones\config\Seeds\DatabaseSeed.php(28): Migrations\AbstractSeed->call('NotificacionesC...')
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(154): DatabaseSeed->run()
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(395): Phinx\Migration\Manager\Environment->executeSeed(Object(DatabaseSeed))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(520): Phinx\Migration\Manager->executeSeed('default', Object(DatabaseSeed))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(114): Phinx\Migration\Manager->seed('default', 'DatabaseSeed')
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(874): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(130): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(506): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#21 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#22 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#23 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#24 {main}
+
+
+2019-05-07 01:29:44 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nombre' in 'field list' in C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 392
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(392): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\CakeAdapter.php(400): Phinx\Db\Adapter\PdoAdapter->insert(Object(Phinx\Db\Table), Array)
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(651): Migrations\CakeAdapter->insert(Object(Phinx\Db\Table), Array)
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(610): Phinx\Db\Table->saveData()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(677): Phinx\Db\Table->create()
+#5 C:\xampp\htdocs\ercomunicaciones\config\Seeds\NotificacionesClienteSeed.php(34): Phinx\Db\Table->save()
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\AbstractSeed.php(111): NotificacionesClienteSeed->run()
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\AbstractSeed.php(53): Migrations\AbstractSeed->runCall(Object(NotificacionesClienteSeed))
+#8 C:\xampp\htdocs\ercomunicaciones\config\Seeds\DatabaseSeed.php(28): Migrations\AbstractSeed->call('NotificacionesC...')
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(154): DatabaseSeed->run()
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(395): Phinx\Migration\Manager\Environment->executeSeed(Object(DatabaseSeed))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(520): Phinx\Migration\Manager->executeSeed('default', Object(DatabaseSeed))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(114): Phinx\Migration\Manager->seed('default', 'DatabaseSeed')
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(874): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(130): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(506): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#21 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#22 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#23 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#24 {main}
+
+
+2019-05-07 01:31:35 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nombre' in 'field list' in C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 392
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(392): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\CakeAdapter.php(400): Phinx\Db\Adapter\PdoAdapter->insert(Object(Phinx\Db\Table), Array)
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(651): Migrations\CakeAdapter->insert(Object(Phinx\Db\Table), Array)
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(639): Phinx\Db\Table->saveData()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(675): Phinx\Db\Table->update()
+#5 C:\xampp\htdocs\ercomunicaciones\config\Seeds\NotificacionesClienteSeed.php(34): Phinx\Db\Table->save()
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\AbstractSeed.php(111): NotificacionesClienteSeed->run()
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\AbstractSeed.php(53): Migrations\AbstractSeed->runCall(Object(NotificacionesClienteSeed))
+#8 C:\xampp\htdocs\ercomunicaciones\config\Seeds\DatabaseSeed.php(28): Migrations\AbstractSeed->call('NotificacionesC...')
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(154): DatabaseSeed->run()
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(395): Phinx\Migration\Manager\Environment->executeSeed(Object(DatabaseSeed))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(520): Phinx\Migration\Manager->executeSeed('default', Object(DatabaseSeed))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(114): Phinx\Migration\Manager->seed('default', 'DatabaseSeed')
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(874): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(130): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(506): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#21 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#22 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#23 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#24 {main}
+
+
+2019-05-07 01:32:04 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nombre' in 'field list' in C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 392
+Stack Trace:
+#0 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(392): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\CakeAdapter.php(400): Phinx\Db\Adapter\PdoAdapter->insert(Object(Phinx\Db\Table), Array)
+#2 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(651): Migrations\CakeAdapter->insert(Object(Phinx\Db\Table), Array)
+#3 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(610): Phinx\Db\Table->saveData()
+#4 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(677): Phinx\Db\Table->create()
+#5 C:\xampp\htdocs\ercomunicaciones\config\Seeds\ActividadesUsuarioSeed.php(34): Phinx\Db\Table->save()
+#6 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\AbstractSeed.php(111): ActividadesUsuarioSeed->run()
+#7 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\AbstractSeed.php(53): Migrations\AbstractSeed->runCall(Object(ActividadesUsuarioSeed))
+#8 C:\xampp\htdocs\ercomunicaciones\config\Seeds\DatabaseSeed.php(29): Migrations\AbstractSeed->call('ActividadesUsua...')
+#9 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(154): DatabaseSeed->run()
+#10 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(395): Phinx\Migration\Manager\Environment->executeSeed(Object(DatabaseSeed))
+#11 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(520): Phinx\Migration\Manager->executeSeed('default', Object(DatabaseSeed))
+#12 C:\xampp\htdocs\ercomunicaciones\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(114): Phinx\Migration\Manager->seed('default', 'DatabaseSeed')
+#13 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(874): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\xampp\htdocs\ercomunicaciones\vendor\symfony\console\Application.php(130): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\Shell.php(506): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#21 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#22 C:\xampp\htdocs\ercomunicaciones\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#23 C:\xampp\htdocs\ercomunicaciones\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#24 {main}
+
+

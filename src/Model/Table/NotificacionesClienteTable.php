@@ -6,31 +6,9 @@ use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
 
-/**
- * NotificacionesCliente Model
- *
- * @property \App\Model\Table\ClientesTable|\Cake\ORM\Association\BelongsTo $Clientes
- * @property \App\Model\Table\PromocionesTable|\Cake\ORM\Association\BelongsTo $Promociones
- *
- * @method \App\Model\Entity\NotificacionesCliente get($primaryKey, $options = [])
- * @method \App\Model\Entity\NotificacionesCliente newEntity($data = null, array $options = [])
- * @method \App\Model\Entity\NotificacionesCliente[] newEntities(array $data, array $options = [])
- * @method \App\Model\Entity\NotificacionesCliente|bool save(\Cake\Datasource\EntityInterface $entity, $options = [])
- * @method \App\Model\Entity\NotificacionesCliente patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
- * @method \App\Model\Entity\NotificacionesCliente[] patchEntities($entities, array $data, array $options = [])
- * @method \App\Model\Entity\NotificacionesCliente findOrCreate($search, callable $callback = null, $options = [])
- *
- * @mixin \Cake\ORM\Behavior\TimestampBehavior
- */
 class NotificacionesClienteTable extends Table
 {
 
-    /**
-     * Initialize method
-     *
-     * @param array $config The configuration for the Table.
-     * @return void
-     */
     public function initialize(array $config)
     {
         parent::initialize($config);
@@ -51,21 +29,15 @@ class NotificacionesClienteTable extends Table
         ]);
     }
 
-    /**
-     * Default validation rules.
-     *
-     * @param \Cake\Validation\Validator $validator Validator instance.
-     * @return \Cake\Validation\Validator
-     */
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->integer('id')
+            ->add('id', 'valid', ['rule' => 'numeric'])
             ->allowEmpty('id', 'create');
 
         $validator
             ->requirePresence('nombre', 'create')
-            ->notEmpty('nombre');
+            ->notEmpty('nombre', 'rellene este campo');
 
         return $validator;
     }

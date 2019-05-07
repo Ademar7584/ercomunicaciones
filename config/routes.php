@@ -54,7 +54,6 @@ Router::scope('/', function (RouteBuilder $routes) {
     /**
      * ...and connect the rest of 'Pages' controller's URLs.
      */
-    $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
 
     /**
      * Connect catchall routes for all controllers.
@@ -73,8 +72,14 @@ Router::scope('/', function (RouteBuilder $routes) {
      * routes you want in your application.
      */
     $routes->fallbacks(DashedRoute::class);
+
 });
 
+Router::scope('/ventas-producto', function ($routes) {
+    $routes->extensions('pdf');
+    $routes->connect('/view/*', ['controller' => 'VentasProducto', 'action' => 'view']);
+    $routes->connect('/lista de reporte', ['controller' => 'VentasProducto', 'action' => 'index']);
+});
 /**
  * Load all plugin routes. See the Plugin documentation on
  * how to customize the loading of plugin routes.

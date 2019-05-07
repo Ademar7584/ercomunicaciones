@@ -14,13 +14,24 @@ class VentasProductoController extends AppController
         return parent::isAuthorized($user);
     }
 
+    public function initialize()
+    {
+        parent::initialize();
+        $this->loadComponent('RequestHandler');
+        $this->_validViewOptions[] = 'pdfConfig';
+    }
+
     public function index()
     {
         $this->paginate = [
             'contain' => ['Productos', 'Clientes']
         ];
         $ventasProducto = $this->paginate($this->VentasProducto);
-
+        
+        $this->pdfConfig = [
+            'orientation' => 'portrait',
+            'filename' => 'Reporte_' . '.pdf'
+        ];
         $this->set(compact('ventasProducto'));
         $this->set('_serialize', ['ventasProducto']);
     }
@@ -31,6 +42,10 @@ class VentasProductoController extends AppController
             'contain' => ['Productos', 'Clientes']
         ]);
 
+        $this->pdfConfig = [
+            'orientation' => 'portrait',
+            'filename' => 'Reporte_' . '.pdf'
+        ];
         $this->set('ventasProducto', $ventasProducto);
         $this->set('_serialize', ['ventasProducto']);
     }

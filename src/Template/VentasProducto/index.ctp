@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
-      <h3>Lista de Pedidos <?= $this->Html->link(__('Crear Pedido'), ['controller' => 'VentasProducto', 'action' => 'add'], ['class' => 'btn btn-outline-primary float-right']) ?></h3>
+      <h3>Lista de Pedidos <?= $this->Html->link(__('Imprimir Reporte'), ['action' => 'index', '_ext' => 'pdf'], ['class' => 'btn btn-outline-info']); ?> <?= $this->Html->link(__('Crear Pedido'), ['controller' => 'VentasProducto', 'action' => 'add'], ['class' => 'btn btn-outline-primary float-right']) ?></h3>
       <div class="table-responsive">
         <table id="mytable" class="table table-bordered table-striped">
           <thead>

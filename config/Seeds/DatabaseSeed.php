@@ -25,6 +25,8 @@ class DatabaseSeed extends AbstractSeed
         $this->call('ActividadesSeed');
         $this->call('ClientesSeed');
         $this->call('ProductosSeed');
-        
+        $this->call('NotificacionesClienteSeed');
+        $this->call('ActividadesUsuarioSeed');
+        $this->call('VentasProductoSeed');
     }
 }
