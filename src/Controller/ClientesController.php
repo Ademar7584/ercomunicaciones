@@ -44,6 +44,7 @@ class ClientesController extends AppController
         $cliente = $this->Clientes->newEntity();
         if ($this->request->is('post')) {
             $cliente = $this->Clientes->patchEntity($cliente, $this->request->getData());
+            $cliente->estado = 1;
             if ($this->Clientes->save($cliente)) {
                 $this->Flash->success(__('El cliente ha sido guardado.'));
 

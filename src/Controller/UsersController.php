@@ -92,6 +92,8 @@ class UsersController extends AppController
             $user = $this->Users->patchEntity($user, $this->request->data);
             $user->rol = 'user';
             $user->estado = 1;
+            $user->image = 'perfil.png';
+            $user->image_dir = '89ffcee1-7ce0-419a-b989-78a696038a03';
             if ($this->Users->save($user)) {
                 $this->Flash->success('El usuario ha sido guardado.');
 

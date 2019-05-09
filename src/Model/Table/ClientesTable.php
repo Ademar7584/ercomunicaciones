@@ -19,10 +19,6 @@ class ClientesTable extends Table
 
         $this->addBehavior('Timestamp');
 
-        $this->belongsTo('Personas', [
-            'foreignKey' => 'persona_id',
-            'joinType' => 'INNER'
-        ]);
         $this->hasMany('Notificacionescliente', [
             'foreignKey' => 'cliente_id'
         ]);
@@ -31,12 +27,6 @@ class ClientesTable extends Table
         ]);
     }
 
-    /**
-     * Default validation rules.
-     *
-     * @param \Cake\Validation\Validator $validator Validator instance.
-     * @return \Cake\Validation\Validator
-     */
     public function validationDefault(Validator $validator)
     {
         $validator
@@ -77,8 +67,6 @@ class ClientesTable extends Table
 
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['persona_id'], 'Personas'));
-
         return $rules;
     }
 }

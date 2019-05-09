@@ -28,7 +28,7 @@ class AppController extends Controller
                 'controller' => 'Users',
                 'action' => 'login'
             ],
-            'authError' => 'Ingrese sus datos',
+            'authError' => 'Ingrese sus datoso o no tiene los permisos para la accion',
             'loginRedirect' => [
                 'controller' => 'Users',
                 'action' => 'home'

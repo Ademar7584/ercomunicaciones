@@ -22,7 +22,7 @@ class PromocionesProductoSeed extends AbstractSeed
         $data = [];
         for ($i=0; $i < 2; $i++) { 
             $data[] = [
-            'nombre' => $faker->text($maxNbChars = 12),
+            'nombre' => $faker->username,
             'producto_id' => $faker->numberBetween($min = 1, $max = 2),
             'promocione_id' => $faker->numberBetween($min = 1, $max = 2),
             'created'    => date("Y-m-d H:i:s"),
@@ -30,7 +30,7 @@ class PromocionesProductoSeed extends AbstractSeed
             ];
         }
 
-        $table = $this->table('promociones_productos');
+        $table = $this->table('promociones_producto');
         $table->insert($data)->save();
     }
 }
