@@ -20,11 +20,6 @@ class ActividadesController extends AppController
         }
         return parent::isAuthorized($user);
     }
-    /**
-     * Index method
-     *
-     * @return \Cake\Http\Response|void
-     */
     public function index()
     {
         $actividades = $this->paginate($this->Actividades, array('limit' => 10));
@@ -33,13 +28,6 @@ class ActividadesController extends AppController
         $this->set('_serialize', ['actividades']);
     }
 
-    /**
-     * View method
-     *
-     * @param string|null $id Actividade id.
-     * @return \Cake\Http\Response|void
-     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
-     */
     public function view($id = null)
     {
         $actividade = $this->Actividades->get($id, [
@@ -56,11 +44,6 @@ class ActividadesController extends AppController
         $this->set('_serialize', ['actividade']);
     }
 
-    /**
-     * Add method
-     *
-     * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
-     */
     public function add()
     {
         $actividade = $this->Actividades->newEntity();
@@ -77,13 +60,6 @@ class ActividadesController extends AppController
         $this->set('_serialize', ['actividade']);
     }
 
-    /**
-     * Edit method
-     *
-     * @param string|null $id Actividade id.
-     * @return \Cake\Http\Response|null Redirects on successful edit, renders view otherwise.
-     * @throws \Cake\Network\Exception\NotFoundException When record not found.
-     */
     public function edit($id = null)
     {
         $actividade = $this->Actividades->get($id, [
@@ -102,13 +78,6 @@ class ActividadesController extends AppController
         $this->set('_serialize', ['actividade']);
     }
 
-    /**
-     * Delete method
-     *
-     * @param string|null $id Actividade id.
-     * @return \Cake\Http\Response|null Redirects to index.
-     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
-     */
     public function delete($id = null)
     {
         $this->request->allowMethod(['post', 'delete']);

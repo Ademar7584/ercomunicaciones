@@ -20,7 +20,6 @@ class CreateUsersTable extends AbstractMigration
             ->AddColumn('estado', 'boolean')
 			->AddColumn('image', 'string')
 			->AddColumn('image_dir', 'string')
-            ->AddColumn('persona_id', 'integer', array('limit' => 11))
             ->AddColumn('created', 'datetime')
             ->AddColumn('modified', 'datetime')
             ->create();

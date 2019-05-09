@@ -6,9 +6,9 @@
       <div class="table-responsive">
         <table id="mytable" class="table table-bordered table-striped">
           <thead>
-            <th><?= $this->Paginator->sort('names') ?></th>
-            <th><?= $this->Paginator->sort('email') ?></th>
-            <th><?= $this->Paginator->sort('rol') ?></th>
+            <th><?= $this->Paginator->sort('Nombres') ?></th>
+            <th><?= $this->Paginator->sort('Correo Electronico') ?></th>
+            <th><?= $this->Paginator->sort('Rol') ?></th>
             <th scope="col" class="actions"><?= __('Acciones') ?></th>
           </thead>
           <tbody>

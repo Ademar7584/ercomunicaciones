@@ -28,7 +28,6 @@ class UserSeed extends AbstractSeed
             'image' => 'perfil.png',
             'image_dir' => '89ffcee1-7ce0-419a-b989-78a696038a03',
             'rol' => 'admin',
-            'persona_id' => 'NULL',
             'estado' => 1,
             'created' => date("Y-m-d H:i:s"),
             'modified' => date("Y-m-d H:i:s")
