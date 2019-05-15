@@ -35,8 +35,10 @@
             </div>
         </div>
         <div class="col-12 col-lg-3">
-        <?= $this->Html->link(__('Imprimir Reporte'), ['action' => 'view', $ventasProducto->id, '_ext' => 'pdf'], ['class' => 'btn btn-outline-primary']); ?>
+            <?= $this->Html->link(__('Imprimir Reporte'), ['action' => 'view', $ventasProducto->id, '_ext' => 'pdf'], ['class' => 'btn btn-outline-primary']); ?>
+            <?php if($current_user['rol'] === 'admin'): ?>
             <?= $this->Html->link('Editar', ['action' => 'edit', $ventasProducto->id], ['class' => 'btn btn-outline-success']) ?>
+            <?php endif; ?>
         </div>
     </div>
 </div>

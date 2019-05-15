@@ -14,7 +14,9 @@
                                     <h6 class="d-block text-success">Precio : <?= h($producto->precio)?> Bs</h6>
                                 </div>
                                 <div class="ml-auto">
+                                    <?php if($current_user['rol'] === 'admin'): ?>
                                     <?= $this->Html->link(__('Editar'), ['controller' => 'Productos', 'action' => 'edit', $producto->id], ['class' => 'btn btn-outline-success']) ?>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>

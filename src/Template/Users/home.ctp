@@ -11,6 +11,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-4 order-md-2 mb-4">
+      <?php if($current_user['rol'] === 'admin'): ?>
       <div class="my-3 p-3 bg-white rounded shadow-sm border">
         <h6 class="border-bottom border-gray pb-2 mb-0">Clientes
           <?= $this->Html->link('Ver Clientes', ['controller' => 'Clientes', 'action' => 'index'], ['class' => 'float-right'])?>
@@ -24,6 +25,7 @@
         </div>
         <?php endforeach; ?>
       </div>
+      <?php endif; ?>
       <div class="my-3 p-3 bg-white rounded shadow-sm border">
         <h6 class="border-bottom border-gray pb-2 mb-0">Promociones
           <?= $this->Html->link('Ver Promociones', ['controller' => 'Promociones', 'action' => 'index'], ['class' => 'float-right'])?>
@@ -39,6 +41,7 @@
       </div>
     </div>
     <div class="col-md-8 order-md-1">
+      <?php if($current_user['rol'] === 'admin'): ?>
       <div class="my-3 p-3 bg-white rounded shadow-sm border">
         <h4>Categorias</h4>
         <table class="table table-bordered">
@@ -60,6 +63,7 @@
           </tbody>
         </table>
       </div>
+      <?php endif; ?>
       <div class="my-3 p-3 bg-white rounded shadow-sm border">
         <h4>Productos</h4>
         <table class="table table-bordered">

@@ -74,7 +74,9 @@
             <div class="float-right">
                 <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
                     data-target="#exampleModalCenter">Enviar Correo</button>
-                <?= $this->Html->link('Editar', ['action' => 'edit', $cliente->id], ['class' => 'btn btn-outline-success']) ?>
+                    <?php if($current_user['rol'] === 'admin'): ?>
+                    <?= $this->Html->link('Editar', ['action' => 'edit', $cliente->id], ['class' => 'btn btn-outline-success']) ?>
+                    <?php endif; ?>
             </div>
         </div>
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"

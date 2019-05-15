@@ -35,7 +35,9 @@
             </div>
         </div>
         <div class="col-12 col-lg-2">
+            <?php if($current_user['rol'] === 'admin'): ?>
             <?= $this->Html->link('Editar', ['action' => 'edit', $promocionesProducto->id], ['class' => 'btn btn-outline-success']) ?>
+            <?php endif; ?>
         </div>
     </div>
 </div>

@@ -22,7 +22,9 @@
               <td><?= h($producto->stock) ?></td>
               <td class="actions">
                     <?= $this->Html->link(__('Ver'), ['action' => 'view', $producto->id], ['class' => 'btn btn-primary btn-sm']) ?>
+                    <?php if($current_user['rol'] === 'admin'): ?>
                     <?= $this->Form->postLink(__('Eliminar'), ['action' => 'delete', $producto->id], ['confirm' => __('Estas seguro de eliminarlo'), 'class' => 'btn btn-danger btn-sm']) ?>
+                    <?php endif; ?>
                 </td>
             </tr>
             <?php endforeach; ?>
