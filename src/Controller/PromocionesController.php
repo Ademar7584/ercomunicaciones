@@ -9,7 +9,7 @@ class PromocionesController extends AppController
 
     public function isAuthorized($user) {
         if(isset($user['rol']) and $user['rol'] === 'user' or $user['rol'] === 'cliente') {
-            if(in_array($this->request->action, ['index', 'add', 'edit', 'view'])) {
+            if(in_array($this->request->action, ['index', 'add', 'view'])) {
                 return true;
             }
         }

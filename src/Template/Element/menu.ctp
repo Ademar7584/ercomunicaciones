@@ -7,6 +7,7 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarsExample03">
     <ul class="navbar-nav mr-auto">
+    <?php if($current_user['rol'] === 'admin'): ?>
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false">Clientes</a>
@@ -23,6 +24,7 @@
           <?= $this->html->link('Crear Categoria', ['controller' => 'Categorias', 'action' => 'add'], ['class' => 'dropdown-item']) ?>
         </div>
       </li>
+      <?php endif; ?>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false">Promociones</a>
@@ -48,11 +50,14 @@
         <div class="dropdown-menu" aria-labelledby="dropdown03">
           <?= $this->html->link('Lista de Actividades', ['controller' => 'Actividades', 'action' => 'index'], ['class' => 'dropdown-item']) ?>
           <?= $this->html->link('Crear Actividad', ['controller' => 'Actividades', 'action' => 'add'], ['class' => 'dropdown-item']) ?>
+          <?php if($current_user['rol'] === 'admin'): ?>
           <div class="dropdown-divider"></div>
           <?= $this->html->link('Lista de Actividades del Usuario', ['controller' => 'ActividadesUsuario', 'action' => 'index'], ['class' => 'dropdown-item']) ?>
           <?= $this->html->link('Crear Actividad del Usuario', ['controller' => 'ActividadesUsuario', 'action' => 'add'], ['class' => 'dropdown-item']) ?>
+          <?php endif; ?>
         </div>
       </li>
+      <?php if($current_user['rol'] === 'admin'): ?>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false">Ventas</a>
@@ -69,6 +74,7 @@
           <?= $this->html->link('Crear Notificaciones del Cliente', ['controller' => 'NotificacionesCliente', 'action' => 'add'], ['class' => 'dropdown-item']) ?>
         </div>
       </li>
+      <?php endif; ?>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li class="nav-item dropdown">
