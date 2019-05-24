@@ -10,6 +10,8 @@ use Cake\ORM\Entity;
  * @property string $nombre
  * @property string $descripcion
  * @property string $tipo
+ * @property \Cake\I18n\FrozenTime $created
+ * @property \Cake\I18n\FrozenTime $modified
  *
  * @property \App\Model\Entity\Producto[] $productos
  */

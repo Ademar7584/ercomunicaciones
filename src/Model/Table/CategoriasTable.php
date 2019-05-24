@@ -16,6 +16,8 @@ class CategoriasTable extends Table
         $this->setTable('categorias');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
+        
+        $this->addBehavior('Timestamp');
 
         $this->hasMany('Productos', [
             'foreignKey' => 'categoria_id'

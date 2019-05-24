@@ -11,6 +11,8 @@ use Cake\ORM\Entity;
  * @property string $descripcion
  * @property string $tipo
  * @property int $estado
+ * @property \Cake\I18n\FrozenTime $created
+ * @property \Cake\I18n\FrozenTime $modified
  */
 class Actividade extends Entity
 {

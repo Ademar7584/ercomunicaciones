@@ -16,6 +16,8 @@ class ActividadesTable extends Table
         $this->setTable('actividades');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
+        
+        $this->addBehavior('Timestamp');
     }
 
     public function validationDefault(Validator $validator)
